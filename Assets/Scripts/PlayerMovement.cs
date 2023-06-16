@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     private float topBorder;
     private float bottomBorder;
 
+    private Transform denStart, seatStart, backStart, crossStart;
+
     private int defaultLayer;
     private readonly int obstacleLayer = 9;
 
@@ -34,7 +36,12 @@ public class PlayerMovement : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
        
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+
         defaultLayer = gameObject.layer;
+        denStart = den;
+        seatStart = seat;
+        backStart = backrest;
+        crossStart = cross;
 
         // Определение границ экрана с учетом размеров персонажа
         leftBorder = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0)).x + capsuleCollider.size.x / 2;
@@ -102,6 +109,19 @@ public class PlayerMovement : MonoBehaviour
         seat.DOMoveX(9, 0.3f, false);
         backrest.DOMoveX(-9, 0.3f, false);
         cross.DOMoveY(25, 0.3f, false);
+    }
+
+    public void Restart()
+    {
+        capsuleCollider.enabled = true;
+        den.localScale = denStart.localScale;
+        seat.localScale = seatStart.localScale;
+        backrest.localScale = backStart.localScale;
+        cross.localScale = cross.localScale;
+        den.rotation = denStart.rotation;
+        den.position = denStart.position;
+        backrest.position = backStart.position;
+        cross.position = crossStart.position;
     }
 
     private void FixedUpdate()

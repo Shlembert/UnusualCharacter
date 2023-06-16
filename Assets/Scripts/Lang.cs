@@ -5,7 +5,8 @@ public class Lang : MonoBehaviour
 {
     public static Lang instance;
 
-    [SerializeField] private Text start, score, setting, music, sound, sence, credits, exSet, buy, exShop, pause, resum, restart, setBtn, wake, exPaus;
+    [SerializeField] private Text start, score, setting, music, sound, sence, credits, exSet,
+        buy, exShop, pause, resum, restart, setBtn, wake, exPaus;
 
     private void Awake()
     {

@@ -6,9 +6,9 @@ public class BGScroller : MonoBehaviour
 {
     public static BGScroller instance;
 
-    [SerializeField] private Transform bg1, bg2, bgFon;
+    [SerializeField] private Transform bg1, bg2, bgFon, hev1, hev2;
     [SerializeField] private SpriteRenderer flash;
-
+    private float offcet = -1.5f;
     public float speed;
 
     private float _startSpeed;
@@ -68,6 +68,8 @@ public class BGScroller : MonoBehaviour
             bg1.position = new Vector2(bg1.position.x, p1);
             bg2.position = new Vector2(bg2.position.x, p2);
         }
+
+        if (hev2.position.y <= 0 + offcet) hev1.position = new Vector2(0, 0 + offcet);
     }
 
     public void StartMoving()

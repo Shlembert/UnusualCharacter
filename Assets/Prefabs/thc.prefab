@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7944767023524216173}
   - component: {fileID: 4654746823718181105}
   m_Layer: 6
-  m_Name: Circle 2
+  m_Name: thc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   rb: {fileID: 4654746823718181105}
   type: 1
   bonus: 3
-  plusMood: 25
+  plusMood: 15
 --- !u!58 &7944767023524216173
 CircleCollider2D:
   m_ObjectHideFlags: 0

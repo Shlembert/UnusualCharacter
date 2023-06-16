@@ -17,13 +17,14 @@ public class UIController : MonoBehaviour
     [SerializeField] private List<Image> hp;
     [SerializeField] private Transform den, table, btn0, btn1, btn2, title, menu, people, cooler, gus, guitar, mask, playerM;
     [SerializeField] private Text bonus;
-    [SerializeField] private int pauseBonus;
+    [SerializeField] private int pauseBonus, priceChip;
     [SerializeField] private SpawnerObstacle pCPlus, tablePlus;
     [SerializeField] private AudioSource source, sfxSound;
     [SerializeField] private AudioClip musicSound, bangSound;
+   
 
-    private int _score = 0;
-    private int _coins = 0;
+    public int score = 0;
+    public int coins = 0;
     private Vector2 _parkPlayer = new Vector2(10, 0);
     private int _hpCount;
     // private int _bonusCount = 0;
@@ -50,7 +51,7 @@ public class UIController : MonoBehaviour
         await HideMenu();
         await UniTask.Delay(400);
         player.transform.position = Vector2.zero;
-        
+
         source.enabled = true;
         panelMenu.SetActive(false);
         _hpCount = hp.Count;
@@ -78,6 +79,7 @@ public class UIController : MonoBehaviour
     public void StopFukingGame()
     {
         DOTween.KillAll();
+        BGScroller.instance.StopGame();
 
         foreach (var item in spawnersOb)
         {
@@ -100,10 +102,10 @@ public class UIController : MonoBehaviour
     public async void RestartGame()
     {
         _hpCount = hp.Count;
-        _score = 0;
-        _coins = 0;
+        score = 0;
+        coins = 0;
 
-        scoreNum.text = _score.ToString();
+        scoreNum.text = score.ToString();
         BGScroller.instance.StopGame();
         MoodController.instance.StopGame();
 
@@ -123,11 +125,12 @@ public class UIController : MonoBehaviour
         spawnersOb.Remove(tablePlus);
 
         player.transform.position = Vector2.zero;
-       
+
         source.enabled = true;
         _hpCount = hp.Count;
         joystik.SetActive(true);
         joy.enabled = true;
+
         BGScroller.instance.StartGame();
         MoodController.instance.GameStart();
 
@@ -142,7 +145,7 @@ public class UIController : MonoBehaviour
 
         foreach (var item in spawnersBo)
         {
-            
+
             item.RestartExit();
             item.StartGame();
             await UniTask.Delay(2500);
@@ -187,42 +190,43 @@ public class UIController : MonoBehaviour
         await UniTask.Delay(300);
         menu.GetComponent<Image>().DOFade(0, 1.2f);
         mask.gameObject.SetActive(false);
-        
+
         den.gameObject.SetActive(false);
         playerM.gameObject.SetActive(true);
         playerM.DOMove(Vector2.zero, 0.5f);
         playerM.DOScale(0.4f, 0.5f);
-        
+
         completionSource.TrySetResult();
     }
 
     public void PlusCoins()
     {
-        _coins++;
-        //coinsTxt.text += " " + _coins;
+        coins+= priceChip;
     }
 
     public void PlusScore()
     {
-        _score++;
-        scoreNum.text = _score.ToString();
+        score++;
+        scoreNum.text = score.ToString();
 
-        if (_score % 100 == 0) 
+        if (score % 100 == 0)
         {
             pCPlus.StartGame();
             spawnersOb.Add(pCPlus);
         }
 
-        if (_score % 150 == 0) 
+        if (score % 150 == 0)
         {
             tablePlus.StartGame();
             spawnersOb.Add(tablePlus);
         }
     }
 
-    public async void StopGame()
+    public void StopGame()
     {
         DOTween.KillAll();
+        BGScroller.instance.StopGame();
+        MoodController.instance.StopGame();
 
         foreach (var item in spawnersOb)
         {
@@ -238,12 +242,12 @@ public class UIController : MonoBehaviour
 
         spawnersOb.Remove(pCPlus);
         spawnersOb.Remove(tablePlus);
+        source.enabled = false;
 
+        joystik.SetActive(false);
+        joy.enabled = false;
         player.SetActive(false);
         deadPnael.SetActive(true);
-        await UniTask.Delay(9000);
-        
-        SceneManager.LoadScene(0);
     }
 
     public async void Damage()
@@ -256,7 +260,7 @@ public class UIController : MonoBehaviour
             sfxSound.PlayOneShot(bangSound);
             var item = hp[_hpCount - 1];
             item.CrossFadeAlpha(0.05f, 0.3f, false);
-           
+
             _hpCount--;
         }
         else

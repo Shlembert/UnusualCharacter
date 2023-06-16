@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cf59b968b1f819b469b496b4d7ff9fe5
+guid: d9822b09501aada4191b92bcfc4931ab
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SP_Mood_01_2
+      name: SP_Lose_02 1_0
       rect:
         serializedVersion: 2
-        x: 75
-        y: 60
-        width: 227
-        height: 1201
+        x: 69
+        y: 1530
+        width: 1100
+        height: 414
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,41 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7af4c9feed986d4799996619e0cb519
-      internalID: 1970677664
+      spriteID: f088ef10ed8c2a544a296c5ae5f7118f
+      internalID: 1320381927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SP_Mood_01_3
+      name: SP_Lose_02 1_1
       rect:
         serializedVersion: 2
-        x: 383
-        y: 67
-        width: 212
-        height: 1187
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 60, z: 0, w: 62}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e72e22f3692b94f4ca7efc375122aaa8
-      internalID: -45505543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SP_Mood_01_5
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 1042
-        width: 216
-        height: 212
+        x: 66
+        y: 1066
+        width: 1104
+        height: 411
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,8 +164,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5ab3af34abc0654b8bfe7e43c2bae77
-      internalID: 1671351875
+      spriteID: 8d5e7e9fc840a3f47b83fdac0b153518
+      internalID: 1395917575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_Lose_02 1_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 739
+        width: 741
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4980d1c06507e341b6ca46be4865380
+      internalID: -351457619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alarm
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 425
+        width: 498
+        height: 523
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7a7090432744e4cacac736bda83fa5
+      internalID: -399093259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_Lose_02 1_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 412
+        width: 741
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b936b1236e18ef4c8aaf203070c435f
+      internalID: 32286878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_Lose_02 1_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 85
+        width: 740
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdb33a3aa1b8d148a3572138782722f
+      internalID: 175520609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SP_Lose_02 1_6
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 85
+        width: 740
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5eaf59ff500a8429c3cfa9bb9a5230
+      internalID: -1988946656
       vertices: []
       indices: 
       edges: []
@@ -202,26 +286,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SP_Mood_01_4: 141243039
-      SP_Mood_01_17: 1584804180
-      SP_Mood_01_16: -1538779882
-      SP_Mood_01_8: 1365789846
-      SP_Mood_01_11: -715613709
-      SP_Mood_01_7: 613337574
-      SP_Mood_01_18: -1379774533
-      SP_Mood_01_9: 94886895
-      SP_Mood_01_12: 771466334
-      SP_Mood_01_2: 1970677664
-      SP_Mood_01_3: -45505543
-      SP_Mood_01_1: -1537832215
-      SP_Mood_01_14: 344359684
-      SP_Mood_01_15: 182600715
-      SP_Mood_01_19: -641712296
-      SP_Mood_01_10: -1467753807
-      SP_Mood_01_13: -1186059550
-      SP_Mood_01_6: -1176078542
-      SP_Mood_01_0: 1857301027
-      SP_Mood_01_5: 1671351875
+      SP_Lose_02 1_5: 175520609
+      SP_Lose_02 1_6: -1988946656
+      SP_Lose_02 1_0: 1320381927
+      SP_Lose_02 1_2: -351457619
+      SP_Lose_02 1_1: 1395917575
+      SP_Lose_02 1_4: 32286878
+      Alarm: -399093259
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

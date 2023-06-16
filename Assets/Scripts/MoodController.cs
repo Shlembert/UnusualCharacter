@@ -70,20 +70,36 @@ public class MoodController : MonoBehaviour
 
     private void MoveDedline()
     {
-        if (moodFill.fillAmount <= 0.35f && !check1)
+        if (moodFill.fillAmount <= 0.25f && !check1)
         {
             check1 = true;
             dedline.DOMoveY(dedUp1, dedlineSpeed, false);
+            decayRate *= 0.5f;
         }
-        else if (moodFill.fillAmount <= 0.2f && !check2)
+        else if (moodFill.fillAmount <= 0.12f && !check2)
         {
             check2 = true;
             dedline.DOMoveY(dedUp2, dedlineSpeed, false);
+            decayRate *= 0.5f;
         }
         else if (moodFill.fillAmount <= 0.005f && !check3)
         {
             check3 = true;
             dedline.DOMoveY(dedUp3, dedlineSpeed, false);
         }
+    }
+
+    public void MoveDedlineUp()
+    {
+        if (dedline.position.y == dedUp1)
+        {
+            dedline.DOMoveY(-11, dedlineSpeed, false).OnComplete(()=> { check1 = false; });
+        }
+        else if (dedline.position.y == dedUp2)
+        {
+            dedline.DOMoveY(dedUp1, dedlineSpeed, false).OnComplete(() => { check2 = false; }); ;
+        }
+
+       // UpMood(15);
     }
 }

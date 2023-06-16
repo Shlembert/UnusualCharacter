@@ -66,6 +66,9 @@ public class ItemController : MonoBehaviour
             case ObstacleType.Guitar:
                 MoodController.instance.UpMood(plusMood);
                 break;
+            case ObstacleType.Plan:
+                MoodController.instance.MoveDedlineUp();
+                break;
             case ObstacleType.Default:
                 break;
             default:

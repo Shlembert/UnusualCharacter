@@ -2,9 +2,8 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public enum ObstacleType { PC, Monitor, Table, THC, Chip, Guitar, Default }
+public enum ObstacleType { PC, Monitor, Table, THC, Chip, Guitar, Plan, Moto, Extinguisher, Default }
 
 public class SpawnerObstacle : MonoBehaviour
 {
@@ -42,7 +41,7 @@ public class SpawnerObstacle : MonoBehaviour
         _startMinTimeSpawn = minTimeBetweenSpawns;
         _startMaxTimeSpawn = maxTimeBetweenSpawns;
 
-        if (!isPause)  StartCoroutine(SpawnItem());
+        if (!isPause) StartCoroutine(SpawnItem());
     }
 
     public void StopGame()
@@ -99,7 +98,7 @@ public class SpawnerObstacle : MonoBehaviour
                 i++;
             }
         }
-       
+
         directions.Clear();
     }
 
