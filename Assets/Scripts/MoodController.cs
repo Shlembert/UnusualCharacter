@@ -6,12 +6,14 @@ public class MoodController : MonoBehaviour
 {
     public static MoodController instance;
 
-    [SerializeField] private Transform dedline;
+    [SerializeField] private Transform dedline, dedText;
     [SerializeField] private float dedUp1, dedUp2, dedUp3;
     [SerializeField] private Image moodFill;
     [SerializeField] private float decayRate, replenishmentRate, dedlineSpeed;
 
     private float step = 0;
+    private float deadTextPosY;
+    private Vector2 deadTextScale;
     public bool decay = false;
     public bool upMood = false;
     private bool check1 = false;
@@ -22,6 +24,8 @@ public class MoodController : MonoBehaviour
     {
         instance = this;
         ShowMood(false);
+        deadTextPosY = dedText.position.y;
+        deadTextScale = dedText.localScale;
     }
 
     public void ShowMood(bool value)
@@ -52,7 +56,7 @@ public class MoodController : MonoBehaviour
     {
         decay = false;
         upMood = false;
-        dedline.DOMoveY(-11, 0, false);
+        dedline.DOMoveY(-14, 0, false);
         moodFill.fillAmount = 1f;
     }
 
@@ -74,12 +78,15 @@ public class MoodController : MonoBehaviour
         {
             check1 = true;
             dedline.DOMoveY(dedUp1, dedlineSpeed, false);
+            dedText.DOMoveY(-4.25f, dedlineSpeed, false);
             decayRate *= 0.5f;
         }
         else if (moodFill.fillAmount <= 0.12f && !check2)
         {
             check2 = true;
             dedline.DOMoveY(dedUp2, dedlineSpeed, false);
+            dedText.DOMoveY(-4, dedlineSpeed, false);
+            dedText.DOScale(deadTextScale * 1.3f, dedlineSpeed);
             decayRate *= 0.5f;
         }
         else if (moodFill.fillAmount <= 0.005f && !check3)
@@ -93,13 +100,16 @@ public class MoodController : MonoBehaviour
     {
         if (dedline.position.y == dedUp1)
         {
-            dedline.DOMoveY(-11, dedlineSpeed, false).OnComplete(()=> { check1 = false; });
+            dedline.DOMoveY(-14, dedlineSpeed, false).OnComplete(() => { check1 = false; });
+            dedText.DOMoveY(deadTextPosY, dedlineSpeed, false);
         }
         else if (dedline.position.y == dedUp2)
         {
-            dedline.DOMoveY(dedUp1, dedlineSpeed, false).OnComplete(() => { check2 = false; }); ;
+            dedline.DOMoveY(dedUp1, dedlineSpeed, false).OnComplete(() => { check2 = false; });
+            dedText.DOMoveY(-4.25f, dedlineSpeed, false);
+            dedText.DOScale(deadTextScale, dedlineSpeed);
         }
 
-       // UpMood(15);
+        // UpMood(15);
     }
 }

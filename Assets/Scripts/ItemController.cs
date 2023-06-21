@@ -8,7 +8,9 @@ public class ItemController : MonoBehaviour
     [SerializeField] private TypeItem type;
     [SerializeField] private ObstacleType bonus;
     [SerializeField] private float plusMood;
+    [SerializeField] private AudioClip audioClip;
 
+    private AudioSource audioSource;
     private SpawnerObstacle spawner;
     private float _maxRotationSpeed; // Максимальная скорость вращения
     private float _impulseX;
@@ -18,6 +20,7 @@ public class ItemController : MonoBehaviour
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         spawner = transform.parent.GetComponent<SpawnerObstacle>();
         uIController = FindObjectOfType<UIController>();
     }
@@ -26,6 +29,8 @@ public class ItemController : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<PlayerMovement>(out PlayerMovement player))
         {
+            audioSource.PlayOneShot(audioClip);
+
             if (type == TypeItem.obstacle)
             {
                 if (!player.immune)

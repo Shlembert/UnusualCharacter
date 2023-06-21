@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform panelGU;
     [SerializeField] private Transform den, seat, backrest, cross;
     [SerializeField] private SpriteRenderer denSprite, crossSprite, seatSprite, backrestSprite;
+    [SerializeField] private ParticleSystem particle;
 
     private new Rigidbody2D rigidbody;
     private CapsuleCollider2D capsuleCollider;
@@ -55,6 +56,16 @@ public class PlayerMovement : MonoBehaviour
         SetLayerRecursively(gameObject, obstacleLayer);
         immune = true;
         Blinking();
+    }
+
+    public void PsPlay()
+    {
+        particle.Play();
+    }
+
+    public void PsStop()
+    {
+        particle.Stop();
     }
 
     private void SetLayerRecursively(GameObject obj, int layer)

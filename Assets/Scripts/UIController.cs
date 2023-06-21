@@ -257,7 +257,7 @@ public class UIController : MonoBehaviour
         if (_hpCount > 0)
         {
             PlayerMovement.instance.Damage();
-            sfxSound.PlayOneShot(bangSound);
+            //sfxSound.PlayOneShot(bangSound);
             var item = hp[_hpCount - 1];
             item.CrossFadeAlpha(0.05f, 0.3f, false);
 
@@ -265,7 +265,7 @@ public class UIController : MonoBehaviour
         }
         else
         {
-            sfxSound.PlayOneShot(bangSound);
+            //sfxSound.PlayOneShot(bangSound);
             Time.timeScale = 0.2f;
             player.GetComponent<PlayerMovement>().Fatality();
             await UniTask.Delay(300);
