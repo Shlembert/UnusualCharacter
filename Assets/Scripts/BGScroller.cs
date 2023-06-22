@@ -8,6 +8,8 @@ public class BGScroller : MonoBehaviour
 
     [SerializeField] private Transform bg1, bg2, bgFon, hev1, hev2;
     [SerializeField] private SpriteRenderer flash;
+    [SerializeField] private GameObject fire;
+
     private float offcet = -1.5f;
     public float speed;
 
@@ -91,9 +93,11 @@ public class BGScroller : MonoBehaviour
         Vector2 size = _flashTransform.localScale;
 
         PlayerMovement.instance.PsPlay();
+        fire.SetActive(true);
+
         float currentSpeed = speed;
 
-        DOTween.To(() => speed, x => speed = x, currentSpeed * 5, 0.3f)
+        DOTween.To(() => speed, x => speed = x, currentSpeed * 3, 0.3f)
        .SetEase(Ease.OutQuad).OnComplete(() => 
        {
            DOTween.To(() => speed, x => speed = x, currentSpeed, 3f)
@@ -108,13 +112,14 @@ public class BGScroller : MonoBehaviour
             _flashTransform.DOMoveY(-10, 0.9f, false).SetEase(Ease.InBack).OnComplete(async () =>
             {
                 PlayerMovement.instance.PsStop();
-                
+                fire.SetActive(false);
+
                 await UniTask.Delay(1000);
                 if (flash)
                 {
                     flash.gameObject.SetActive(false);
                     _flashTransform.localScale = size;
-                    _flashTransform.position = new Vector2(0, 3);
+                    _flashTransform.position = new Vector2(0, 2);
                 }
             });
         });

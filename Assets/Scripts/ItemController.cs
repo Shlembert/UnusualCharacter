@@ -94,12 +94,24 @@ public class ItemController : MonoBehaviour
 
         rb.AddForce(new Vector2(_impulseX, impulseForceY), ForceMode2D.Impulse);
 
-        // Устанавливаем случайное вращение
-        float torque = Random.Range(-1f, 1f) * 0.05f; // Генерируем случайное значение для вращения
-        rb.AddTorque(torque, ForceMode2D.Impulse); // Применяем случайное вращение
-    }
+        float torque;
 
-    private void FixedUpdate()
+        // Устанавливаем случайное вращение
+        if (bonus == ObstacleType.Extinguisher)
+        {
+            torque = 40;
+            rb.AddTorque(torque, ForceMode2D.Force);
+        }
+        else 
+        {
+            torque = Random.Range(-1f, 1f) * 0.05f; // Генерируем случайное значение для вращения
+
+            rb.AddTorque(torque, ForceMode2D.Impulse); // Применяем случайное вращение
+        }
+        
+    }
+    private void FixedUpdate(
+)
     {
         LimitRotationSpeed(); // Ограничение скорости вращения
     }
