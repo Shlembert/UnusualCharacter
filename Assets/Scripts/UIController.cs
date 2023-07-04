@@ -18,7 +18,6 @@ public class UIController : MonoBehaviour
     [SerializeField] private Transform den, table, btn0, btn1, btn2, title, menu, people, cooler, gus, guitar, mask, playerM;
     [SerializeField] private Text bonus;
     [SerializeField] private int pauseBonus, priceChip;
-    [SerializeField] private SpawnerObstacle pCPlus, tablePlus;
     [SerializeField] private AudioSource source, sfxSound;
     [SerializeField] private AudioClip musicSound, bangSound;
    
@@ -27,6 +26,12 @@ public class UIController : MonoBehaviour
     public int coins = 0;
     private Vector2 _parkPlayer = new Vector2(10, 0);
     private int _hpCount;
+
+    public void SetScore(int score)
+    {
+        this.score = score;
+        scoreNum.text = score.ToString();
+    }
     // private int _bonusCount = 0;
 
     private void Start()
@@ -66,13 +71,13 @@ public class UIController : MonoBehaviour
         foreach (var item in spawnersOb)
         {
             item.StartGame();
-            await UniTask.Delay(5000);
+            //await UniTask.Delay(5000);
         }
 
         foreach (var item in spawnersBo)
         {
             item.StartGame();
-            await UniTask.Delay(2500);
+            //await UniTask.Delay(2500);
         }
     }
 
@@ -92,9 +97,6 @@ public class UIController : MonoBehaviour
             item.StopGame();
             item.StopAllCoroutines();
         }
-
-        spawnersOb.Remove(pCPlus);
-        spawnersOb.Remove(tablePlus);
 
         SceneManager.LoadScene(0);
     }
@@ -121,9 +123,6 @@ public class UIController : MonoBehaviour
             item.StopGame();
         }
 
-        spawnersOb.Remove(pCPlus);
-        spawnersOb.Remove(tablePlus);
-
         player.transform.position = Vector2.zero;
 
         source.enabled = true;
@@ -138,7 +137,7 @@ public class UIController : MonoBehaviour
         {
             item.RestartExit();
             item.StartGame();
-            await UniTask.Delay(5000);
+            //await UniTask.Delay(5000);
         }
 
         await UniTask.Delay(1500);
@@ -148,7 +147,7 @@ public class UIController : MonoBehaviour
 
             item.RestartExit();
             item.StartGame();
-            await UniTask.Delay(2500);
+            //await UniTask.Delay(2500);
         }
     }
 
@@ -159,13 +158,13 @@ public class UIController : MonoBehaviour
         foreach (var item in spawnersOb)
         {
             item.StartGame();
-            await UniTask.Delay(5000);
+            //await UniTask.Delay(5000);
         }
 
         foreach (var item in spawnersBo)
         {
             item.StartGame();
-            await UniTask.Delay(500);
+            //await UniTask.Delay(500);
         }
     }
 
@@ -204,24 +203,6 @@ public class UIController : MonoBehaviour
         coins+= priceChip;
     }
 
-    public void PlusScore()
-    {
-        score++;
-        scoreNum.text = score.ToString();
-
-        if (score % 100 == 0)
-        {
-            pCPlus.StartGame();
-            spawnersOb.Add(pCPlus);
-        }
-
-        if (score % 150 == 0)
-        {
-            tablePlus.StartGame();
-            spawnersOb.Add(tablePlus);
-        }
-    }
-
     public void StopGame()
     {
         DOTween.KillAll();
@@ -240,8 +221,6 @@ public class UIController : MonoBehaviour
             item.StopAllCoroutines();
         }
 
-        spawnersOb.Remove(pCPlus);
-        spawnersOb.Remove(tablePlus);
         source.enabled = false;
 
         joystik.SetActive(false);

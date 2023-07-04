@@ -20,7 +20,7 @@ public class SpawnerObstacle : MonoBehaviour
     [SerializeField] private int complexityShift;
     [SerializeField] private float maxRotationSpeed;
 
-    private int _cointSpawn;
+    private int _scoreSpawn;
     private int _startComplex;
     private float _startMaxDur;
     private float _startMinDur;
@@ -32,6 +32,13 @@ public class SpawnerObstacle : MonoBehaviour
 
     private bool isPause = false;
 
+    private Coroutine _corutine;
+
+    private void Start()
+    {
+        _startMinTimeSpawn = minTimeBetweenSpawns;
+        _startMaxTimeSpawn = maxTimeBetweenSpawns;
+    }
     public void StartGame()
     {
         _startComplex = complexityShift;
@@ -41,14 +48,13 @@ public class SpawnerObstacle : MonoBehaviour
         _startMinTimeSpawn = minTimeBetweenSpawns;
         _startMaxTimeSpawn = maxTimeBetweenSpawns;
 
-        if (!isPause) StartCoroutine(SpawnItem());
+        if (!isPause && _corutine == null) _corutine = StartCoroutine(SpawnItem());
     }
 
     public void StopGame()
     {
         isPause = true;
-
-        StopAllCoroutines();
+        if (_corutine != null) StopCoroutine(_corutine);
         DOTween.KillAll();
         complexityShift = _startComplex;
         maxDuration = _startMaxDur;
@@ -57,7 +63,7 @@ public class SpawnerObstacle : MonoBehaviour
         minTimeBetweenSpawns = _startMinTimeSpawn;
         maxTimeBetweenSpawns = _startMaxTimeSpawn;
 
-        _cointSpawn = 0;
+        _scoreSpawn = 0;
 
         foreach (Transform item in transform)
         {
@@ -67,13 +73,12 @@ public class SpawnerObstacle : MonoBehaviour
                 item.gameObject.SetActive(false);
             }
         }
-        StopAllCoroutines();
     }
 
     public void Pause()
     {
-        StopAllCoroutines();
         isPause = true;
+        if (_corutine != null) StopCoroutine(_corutine);
 
         foreach (Transform item in transform)
         {
@@ -109,8 +114,11 @@ public class SpawnerObstacle : MonoBehaviour
 
     private IEnumerator SpawnItem()
     {
+        Debug.Log(gameObject.name);
+        yield return new WaitForSeconds(Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns));
         while (!isPause)
-        {
+        {   
+            Debug.Log(gameObject.name + "333");
             Transform inactiveItem = null;
 
             // ѕровер€ем наличие неактивных айтемов в пуле и используем их, если они есть
@@ -139,7 +147,6 @@ public class SpawnerObstacle : MonoBehaviour
                 itemController.MoveItem(minDuration, maxDuration, maxSpeedX, maxRotationSpeed);
                 if (obType == ObstacleType.PC) CheckComplexityShift();
             }
-
             yield return new WaitForSeconds(Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns));
         }
     }
@@ -148,12 +155,12 @@ public class SpawnerObstacle : MonoBehaviour
     private Vector2 GetRandomSpawnPosition()
     {
         Bounds spawnBounds = spawnArea.bounds;
-        float spawnX = Random.Range(spawnBounds.min.x, spawnBounds.max.x);
-        float spawnY = Random.Range(spawnBounds.min.y, spawnBounds.max.y);
+        float spawnX = UnityEngine.Random.Range(spawnBounds.min.x, spawnBounds.max.x);
+        float spawnY = UnityEngine.Random.Range(spawnBounds.min.y, spawnBounds.max.y);
 
         // ƒобавл€ем разброс (случайное смещение) к позиции спавна
-        float randomOffsetX = Random.Range(-maxSpawnOffset, maxSpawnOffset);
-        float randomOffsetY = Random.Range(-maxSpawnOffset, maxSpawnOffset);
+        float randomOffsetX = UnityEngine.Random.Range(-maxSpawnOffset, maxSpawnOffset);
+        float randomOffsetY = UnityEngine.Random.Range(-maxSpawnOffset, maxSpawnOffset);
         spawnX += randomOffsetX;
         spawnY += randomOffsetY;
 
@@ -188,11 +195,9 @@ public class SpawnerObstacle : MonoBehaviour
 
     private void CheckComplexityShift()
     {
-        _cointSpawn++;
-
-        UIController.instance.PlusScore();
-
-        if (_cointSpawn % 20 == 0) BGScroller.instance.ChangeSpeed();
+        _scoreSpawn++;
+        UIController.instance.SetScore(_scoreSpawn);
+        if (_scoreSpawn % 20 == 0) BGScroller.instance.ChangeSpeed();
 
     }
 }
