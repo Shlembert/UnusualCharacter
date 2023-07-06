@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,10 +42,10 @@ public class Lang : MonoBehaviour
         sence.text = "нрйкхй";
         credits.text = "рхрпш";
         exPaus.text = exSet.text = exShop.text = "бшунд";
-        buy.text = "аюькърэ";
+        buy.text = "йсохрэ";
         pause.text = "оюсгю";
         resum.text = "опнднкфхрэ";
-        restart.text = "намскемхе";
+        restart.text = "пеярюпр";
         wake.text = "опнямсрэяъ";
     }
 }

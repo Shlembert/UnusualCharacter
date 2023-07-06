@@ -11,8 +11,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private FloatingJoystick joystick;
     [SerializeField] private Transform panelGU;
     [SerializeField] private Transform den, seat, backrest, cross;
-    [SerializeField] private SpriteRenderer denSprite, crossSprite, seatSprite, backrestSprite;
-    [SerializeField] private ParticleSystem particle;
+    [SerializeField] private SpriteRenderer denHeadSprite, denBodySprite, crossSprite, seatSprite, backrestSprite;
+    [SerializeField] private ParticleSystem particle,starParticle;
+    [SerializeField] private Animator faceAnimator;
+    
 
     private new Rigidbody2D rigidbody;
     private CapsuleCollider2D capsuleCollider;
@@ -27,8 +29,11 @@ public class PlayerMovement : MonoBehaviour
     private int defaultLayer;
     private readonly int obstacleLayer = 9;
 
+    public SpriteRenderer DenBodySprite { set => denBodySprite = value; }
+
     private void Awake()
     {
+        //faceAnimator.SetInteger("Heals", UIController.instance.MaxHpCount);
         instance = this;
     }
 
@@ -53,8 +58,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void Damage()
     {
+        starParticle.Play();
         SetLayerRecursively(gameObject, obstacleLayer);
         immune = true;
+        faceAnimator.SetBool("Dizziness", immune);
+        faceAnimator.SetInteger("Heals",UIController.instance.HpCount);
         Blinking();
     }
 
@@ -82,12 +90,14 @@ public class PlayerMovement : MonoBehaviour
     {
         for (int i = 0; i < 9; i++)
         {
-            denSprite.DOFade(0, 0.2f);
+            denHeadSprite.DOFade(0, 0.2f);
+            denBodySprite.DOFade(0, 0.2f);
             crossSprite.DOFade(0, 0.2f);
             seatSprite.DOFade(0, 0.2f);
             backrestSprite.DOFade(0, 0.2f);
             await UniTask.Delay(200);
-            denSprite.DOFade(1, 0.2f);
+            denHeadSprite.DOFade(1, 0.2f);
+            denBodySprite.DOFade(1, 0.2f);
             crossSprite.DOFade(1, 0.2f);
             seatSprite.DOFade(1, 0.2f);
             backrestSprite.DOFade(1, 0.2f);
@@ -95,6 +105,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         immune = false;
+        faceAnimator.SetBool("Dizziness", immune);
         SetLayerRecursively(gameObject, defaultLayer);
     }
 
@@ -124,6 +135,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Restart()
     {
+        faceAnimator.SetInteger("Heals", UIController.instance.MaxHpCount);
         capsuleCollider.enabled = true;
         den.localScale = denStart.localScale;
         seat.localScale = seatStart.localScale;

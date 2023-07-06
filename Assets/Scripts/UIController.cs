@@ -2,13 +2,13 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
     public static UIController instance;
-
     [SerializeField] private FloatingJoystick joy;
     [SerializeField] private Text coinsTxt, scoreTxt, coinsNum, scoreNum;
     [SerializeField] private GameObject player, joystik, panelMenu, deadPnael;
@@ -20,12 +20,14 @@ public class UIController : MonoBehaviour
     [SerializeField] private int pauseBonus, priceChip;
     [SerializeField] private AudioSource source, sfxSound;
     [SerializeField] private AudioClip musicSound, bangSound;
-   
 
     public int score = 0;
     public int coins = 0;
     private Vector2 _parkPlayer = new Vector2(10, 0);
     private int _hpCount;
+
+    public int HpCount { get => _hpCount;}
+    public int MaxHpCount { get => hp.Count; }
 
     public void SetScore(int score)
     {
@@ -83,6 +85,8 @@ public class UIController : MonoBehaviour
 
     public void StopFukingGame()
     {
+        SaveCoins();
+
         DOTween.KillAll();
         BGScroller.instance.StopGame();
 
@@ -105,7 +109,7 @@ public class UIController : MonoBehaviour
     {
         _hpCount = hp.Count;
         score = 0;
-        coins = 0;
+        SaveCoins();
 
         scoreNum.text = score.ToString();
         BGScroller.instance.StopGame();
@@ -235,12 +239,12 @@ public class UIController : MonoBehaviour
 
         if (_hpCount > 0)
         {
-            PlayerMovement.instance.Damage();
             //sfxSound.PlayOneShot(bangSound);
             var item = hp[_hpCount - 1];
             item.CrossFadeAlpha(0.05f, 0.3f, false);
 
             _hpCount--;
+            PlayerMovement.instance.Damage();
         }
         else
         {
@@ -256,5 +260,12 @@ public class UIController : MonoBehaviour
     public void PressExit()
     {
         Application.Quit();
+    }
+
+    private void SaveCoins()
+    {
+        int c = PlayerPrefs.GetInt("Coins", 0);
+        PlayerPrefs.SetInt("Coins", c + coins);
+        coins = 0;
     }
 }

@@ -48,7 +48,7 @@ public class SpawnerObstacle : MonoBehaviour
         _startMinTimeSpawn = minTimeBetweenSpawns;
         _startMaxTimeSpawn = maxTimeBetweenSpawns;
 
-        if (!isPause && _corutine == null) _corutine = StartCoroutine(SpawnItem());
+        if (!isPause) _corutine = StartCoroutine(SpawnItem());
     }
 
     public void StopGame()
@@ -114,11 +114,9 @@ public class SpawnerObstacle : MonoBehaviour
 
     private IEnumerator SpawnItem()
     {
-        Debug.Log(gameObject.name);
         yield return new WaitForSeconds(Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns));
         while (!isPause)
         {   
-            Debug.Log(gameObject.name + "333");
             Transform inactiveItem = null;
 
             // ѕровер€ем наличие неактивных айтемов в пуле и используем их, если они есть

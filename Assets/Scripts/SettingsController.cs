@@ -20,6 +20,8 @@ public class SettingsController : MonoBehaviour
     private bool pause = false;
     private bool en = false;
 
+    public bool En { get => en;}
+
     private void Awake()
     {
         instance = this;
