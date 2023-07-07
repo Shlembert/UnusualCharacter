@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353328188075929541}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.015, y: -0.032, z: 0}
-  m_LocalScale: {x: 1.082386, y: 1.121461, z: 1}
+  m_LocalPosition: {x: 0.159, y: -0.015, z: 0}
+  m_LocalScale: {x: 1.0632495, y: 1.1016337, z: 0.98232}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4102145537541243086}
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 30f9dc17a26a1ba47873dd58f876f336, type: 3}
-  m_Color: {r: 0.9339623, g: 0.2951673, b: 0.2951673, a: 1}
+  m_Sprite: {fileID: -314235620, guid: 55cd9ededddc7f642b4ed95032f8e190, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -237,6 +237,7 @@ MonoBehaviour:
   bonus: 0
   plusMood: 0
   audioClip: {fileID: 8300000, guid: 1c13202dd789f0c4b8de654feb9ec6fc, type: 3}
+  area: {fileID: 353328188075929541}
 --- !u!50 &6567911226705291713
 Rigidbody2D:
   serializedVersion: 4

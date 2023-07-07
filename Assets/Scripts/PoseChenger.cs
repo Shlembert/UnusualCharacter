@@ -23,7 +23,7 @@ public class PoseChenger : MonoBehaviour ,IItemChenger
 
     private void Start()
     {
-        SetItem(PlayerPrefs.GetInt("CurrentPose", 0));
+        SetItem(PlayerPrefs.GetInt("Current Pose", 0));
     }
 }
 

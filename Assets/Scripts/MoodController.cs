@@ -54,10 +54,12 @@ public class MoodController : MonoBehaviour
 
     public void StopGame()
     {
+        Debug.Log("Stop");
         decay = false;
         upMood = false;
-        dedline.DOMoveY(-14, 0, false);
         moodFill.fillAmount = 1f;
+        //dedline.DOMoveY(-14, 0, false);
+        dedline.position = new Vector2(0, -14);
     }
 
     private void Update()

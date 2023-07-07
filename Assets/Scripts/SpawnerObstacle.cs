@@ -84,6 +84,7 @@ public class SpawnerObstacle : MonoBehaviour
         {
             if (item.gameObject.activeSelf)
             {
+                item.GetComponent<Collider2D>().enabled = false;
                 directions.Add(item.GetComponent<Rigidbody2D>().velocity);
                 item.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             }
@@ -99,6 +100,7 @@ public class SpawnerObstacle : MonoBehaviour
         {
             if (item.gameObject.activeSelf)
             {
+                item.GetComponent<Collider2D>().enabled = true;
                 item.GetComponent<Rigidbody2D>().velocity = directions[i];
                 i++;
             }
@@ -128,13 +130,14 @@ public class SpawnerObstacle : MonoBehaviour
                     break;
                 }
             }
-
+            
             // Если есть неактивный объект, используем его
             if (inactiveItem != null)
             {
                 inactiveItem.gameObject.SetActive(true);
                 inactiveItem.position = GetRandomSpawnPosition();
                 ItemController itemController = inactiveItem.GetComponent<ItemController>();
+                itemController.ViewArea(true);
                 itemController.MoveItem(minDuration, maxDuration, maxSpeedX, maxRotationSpeed);
                 if (obType == ObstacleType.PC) CheckComplexityShift();
             }
@@ -142,6 +145,7 @@ public class SpawnerObstacle : MonoBehaviour
             {
                 Transform newItem = Instantiate(itemPool, GetRandomSpawnPosition(), Quaternion.identity, transform);
                 ItemController itemController = newItem.GetComponent<ItemController>();
+                itemController.ViewArea(true);
                 itemController.MoveItem(minDuration, maxDuration, maxSpeedX, maxRotationSpeed);
                 if (obType == ObstacleType.PC) CheckComplexityShift();
             }

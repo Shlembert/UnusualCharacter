@@ -9,6 +9,7 @@ public class ItemController : MonoBehaviour
     [SerializeField] private ObstacleType bonus;
     [SerializeField] private float plusMood;
     [SerializeField] private AudioClip audioClip;
+    [SerializeField] private GameObject area;
 
     private AudioSource audioSource;
     private SpawnerObstacle spawner;
@@ -25,12 +26,17 @@ public class ItemController : MonoBehaviour
         uIController = FindObjectOfType<UIController>();
     }
 
+    public void ViewArea(bool volume)
+    {
+        area.SetActive(volume);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent<PlayerMovement>(out PlayerMovement player))
         {
             audioSource.PlayOneShot(audioClip);
-
+            ViewArea(false);
             if (type == TypeItem.obstacle)
             {
                 if (!player.immune)

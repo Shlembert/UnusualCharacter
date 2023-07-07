@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 01ad272aabb1f3d4fb3ec194b0e577e3, type: 3}
+  m_Sprite: {fileID: 2051406727, guid: 55cd9ededddc7f642b4ed95032f8e190, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -237,6 +237,7 @@ MonoBehaviour:
   bonus: 0
   plusMood: 0
   audioClip: {fileID: 8300000, guid: d7138972731490c4b8f3f48520d3b710, type: 3}
+  area: {fileID: 7979042401965490354}
 --- !u!50 &3318500198068425738
 Rigidbody2D:
   serializedVersion: 4
