@@ -19,7 +19,8 @@ public class SettingsController : MonoBehaviour
     private bool pressShop = false;
     private bool pause = false;
     private bool en = false;
-
+    private Vector2 playerVelosity;
+    private Rigidbody2D playerRB;
     public bool En { get => en;}
 
     private void Awake()
@@ -29,6 +30,7 @@ public class SettingsController : MonoBehaviour
 
     private void Start()
     {
+        playerRB = player.GetComponent<Rigidbody2D>();
         titleOrigPos = titleText.transform.position.y;
         startOrigPos = startBtn.transform.position.y;
         LoadLanguage();
@@ -73,8 +75,10 @@ public class SettingsController : MonoBehaviour
             MoodController.instance.decay = false;
 
             foreach (var item in spawnerObstacles) item.Pause();
-           
-            player.transform.position = new Vector2(10, 0);
+
+            //player.transform.position = new Vector2(10, 0);
+            playerVelosity = playerRB.velocity;
+            playerRB.velocity = Vector2.zero;
             joy.SetActive(false);
             pauseWindow.SetActive(true);
             pauseWindow.transform.DOMoveY(0, 0.5f, false).SetEase(Ease.OutBack);
@@ -144,7 +148,8 @@ public class SettingsController : MonoBehaviour
             bGScroller.speed = speedBG;
             MoodController.instance.decay = true;
 
-            player.transform.position = Vector2.zero;
+            //player.transform.position = Vector2.zero;
+            playerRB.velocity = playerVelosity;
 
             joy.SetActive(true);
 

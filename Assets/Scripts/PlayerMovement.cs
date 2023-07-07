@@ -30,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
     private readonly int obstacleLayer = 9;
 
     public SpriteRenderer DenBodySprite { set => denBodySprite = value; }
+    public SpriteRenderer CrossSprite { set { crossSprite = value; cross = value.transform; } }
+    public SpriteRenderer SeatSprite { set { seatSprite = value; seat = value.transform; } }
+    public SpriteRenderer BackrestSprite { set { backrestSprite = value; backrest = value.transform; } }
 
     private void Awake()
     {

@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class ShopItem : MonoBehaviour, IPointerDownHandler
 {
+    [SerializeField] private string PlayerPrefsKey;
     [SerializeField] private Button buyButton;
     [SerializeField] private Text buyButtonText;
     [SerializeField] private Image sprite;
@@ -12,10 +13,15 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
     [SerializeField] private Text priceText;
     [SerializeField] private int index;
     [SerializeField] private Text coinText;
+    [SerializeField] private GameObject itemChengerGO;
+    private IItemChenger itemChenger;
+    private bool en;
 
     private void Start()
     {
-        if(PlayerPrefs.GetInt("CurrentPose", 0) == index)
+        Lang.instance.LangChenge.AddListener(ChengeLang);
+        itemChenger = itemChengerGO.GetComponent<IItemChenger>();
+        if (PlayerPrefs.GetInt("Current " + PlayerPrefsKey, 0) == index)
         {
             Select();
         }
@@ -31,11 +37,25 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
         buyButton.onClick.RemoveAllListeners();
         buyButton.onClick.AddListener(BuyButtonPressed);
         slot.sprite = sprite.sprite;
-        int isBuyed = PlayerPrefs.GetInt("Pose:" + index, 0);
-        if (isBuyed == 1)
+        int isBuyed = PlayerPrefs.GetInt(PlayerPrefsKey + index, index == 0 ? 1 : 0);
+        UpdateText(isBuyed == 1);
+        
+    }
+
+    public void ChengeLang(bool en)
+    {
+        this.en = en;
+        if (PlayerPrefs.GetInt("Current " + PlayerPrefsKey, 0) == index)
         {
-            priceText.fontSize = 44;
-            if (SettingsController.instance.En)
+            UpdateText(true);
+        }
+    }
+    private void UpdateText(bool isBuyed)
+    {
+        if (isBuyed)
+        {
+            priceText.fontSize = 66;
+            if (en)
             {
                 priceText.text = "Bought";
                 buyButtonText.text = "Set";
@@ -45,12 +65,13 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
                 priceText.text = "Куплено";
                 buyButtonText.text = "Выбрать";
             }
+
         }
         else
         {
             priceText.fontSize = 88;
             priceText.text = price.ToString();
-            if (SettingsController.instance.En)
+            if (en)
             {
                 buyButtonText.text = "Buy";
             }
@@ -61,24 +82,9 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
         }
     }
 
-    private void UpdateText()
-    {
-        priceText.fontSize = 44;
-        if (SettingsController.instance.En)
-        {
-            priceText.text = "Bought";
-            buyButtonText.text = "Set";
-        }
-        else
-        {
-            priceText.text = "Куплено";
-            buyButtonText.text = "Выбрать";
-        }
-    }
-
     public void BuyButtonPressed()
     {
-        int isBuyed = PlayerPrefs.GetInt("Pose:" + index, 0);
+        int isBuyed = PlayerPrefs.GetInt(PlayerPrefsKey + index, 0);
         if (isBuyed == 0) {
             int coins = PlayerPrefs.GetInt("Coins", 0);
             if (coins >= price)
@@ -86,17 +92,17 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
                 coins -= price;
                 coinText.text = coins.ToString();
                 PlayerPrefs.SetInt("Coins", coins);
-                PlayerPrefs.SetInt("Pose:" + index, 1);
-                PlayerPrefs.SetInt("CurrentPose", index);
-                PoseChenger.instance.SetPose(index);
+                PlayerPrefs.SetInt(PlayerPrefsKey + index, 1);
+                PlayerPrefs.SetInt("Current " + PlayerPrefsKey, index);
+                itemChenger.SetItem(index);
                 PlayerPrefs.Save();
-                UpdateText();
+                UpdateText(true);
             }
         }
         else
         {
-            PlayerPrefs.SetInt("CurrentPose", index);
-            PoseChenger.instance.SetPose(index);
+            PlayerPrefs.SetInt("Current " + PlayerPrefsKey, index);
+            itemChenger.SetItem(index);
             PlayerPrefs.Save();
         }
     }

@@ -3,29 +3,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoseChenger : MonoBehaviour
+public class PoseChenger : MonoBehaviour ,IItemChenger
 {
-    [SerializeField] private List<GameObject> poseSprites;
+    [SerializeField] private List<GameObject> Items;
     [SerializeField] private Transform head;
-    [SerializeField] private int startPose;
-    public static PoseChenger instance;
-    public void SetPose(int poseIndex)
+    public void SetItem(int poseIndex)
     {
-        foreach (var item in poseSprites)
+        foreach (var item in Items)
         {
             item.SetActive(false);
         }
-        poseSprites[poseIndex].SetActive(true);
-        Transform heapPoint = poseSprites[poseIndex].transform.GetChild(0);
+        Items[poseIndex].SetActive(true);
+        Transform heapPoint = Items[poseIndex].transform.GetChild(0);
         head.position = heapPoint.position;
         head.rotation = heapPoint.rotation;
         head.localScale = heapPoint.lossyScale;
-        PlayerMovement.instance.DenBodySprite = poseSprites[poseIndex].GetComponent<SpriteRenderer>();
+        PlayerMovement.instance.DenBodySprite = Items[poseIndex].GetComponent<SpriteRenderer>();
     }
 
     private void Start()
     {
-        instance = this;
-        SetPose(PlayerPrefs.GetInt("CurrentPose", 0));
+        SetItem(PlayerPrefs.GetInt("CurrentPose", 0));
     }
+}
+
+public interface IItemChenger
+{
+    public void SetItem(int itemIndex);
 }

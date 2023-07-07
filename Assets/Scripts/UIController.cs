@@ -20,12 +20,12 @@ public class UIController : MonoBehaviour
     [SerializeField] private int pauseBonus, priceChip;
     [SerializeField] private AudioSource source, sfxSound;
     [SerializeField] private AudioClip musicSound, bangSound;
+    [SerializeField] private Button settingsButton, shopButton;
 
     public int score = 0;
     public int coins = 0;
     private Vector2 _parkPlayer = new Vector2(10, 0);
     private int _hpCount;
-
     public int HpCount { get => _hpCount;}
     public int MaxHpCount { get => hp.Count; }
 
@@ -55,6 +55,8 @@ public class UIController : MonoBehaviour
 
     public async void StartGame()
     {
+        settingsButton.enabled = false;
+        shopButton.enabled = false;
         await HideMenu();
         await UniTask.Delay(400);
         player.transform.position = Vector2.zero;
@@ -85,6 +87,9 @@ public class UIController : MonoBehaviour
 
     public void StopFukingGame()
     {
+        settingsButton.enabled = true;
+        shopButton.enabled = true;
+
         SaveCoins();
 
         DOTween.KillAll();

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 39a9975607778a74c9b8fc4c4358eb04
+guid: 43a7a5248fa8fdd4c9a27339d6b10ff8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,311 +113,215 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SP_Poses_Atlas_01_0
+      name: SP_Chairs_01_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1111
-        width: 331
-        height: 358
+        x: 50
+        y: 552
+        width: 107
+        height: 156
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb60ade85ce71d14ca6d1242b28ba2e0
-      internalID: 630318209
+      spriteID: 4a90bff75c1e5f043b7d84b39912b7e3
+      internalID: -314408433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SP_Poses_Atlas_01_1
+      name: SP_Chairs_01_1
       rect:
         serializedVersion: 2
-        x: 432
-        y: 1133
-        width: 206
-        height: 273
+        x: 228
+        y: 460
+        width: 174
+        height: 248
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec52dd16f6fd4414ebba61925f5f92dd
-      internalID: -1093976758
+      spriteID: 7ea2345a2a846ea488dd1e883f94ff71
+      internalID: -1107975142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SP_Poses_Atlas_01_2
+      name: SP_Chairs_01_2
       rect:
         serializedVersion: 2
-        x: 807
-        y: 1133
-        width: 221
-        height: 277
+        x: 480
+        y: 486
+        width: 332
+        height: 218
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98039ac1dd23bc44dbdf3c60714d32b5
-      internalID: -579071706
+      spriteID: 55b03d5b2c8a7f748a5dd0bd5c5000b6
+      internalID: 752053782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SP_Poses_Atlas_01_3
+      name: SP_Chairs_01_3
       rect:
         serializedVersion: 2
-        x: 1228
-        y: 1115
-        width: 224
-        height: 295
+        x: 18
+        y: 234
+        width: 148
+        height: 163
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d31cd644bcf4b57429aeaa570d0319a5
-      internalID: -1074302328
+      spriteID: 083102ba883bd0d4c9701b3bdd976b3d
+      internalID: 2062549689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SP_Poses_Atlas_01_4
+      name: SP_Chairs_01_4
       rect:
         serializedVersion: 2
-        x: 30
-        y: 921
-        width: 145
-        height: 106
+        x: 240
+        y: 238
+        width: 114
+        height: 155
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e89207894fdaee4f8c0b61a9b311198
-      internalID: 180240385
+      spriteID: 37f9d55abca98ae45ae9b175ee2e091e
+      internalID: 85058011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SP_Poses_Atlas_01_5
+      name: SP_Chairs_01_5
       rect:
         serializedVersion: 2
-        x: 244
-        y: 948
-        width: 50
-        height: 54
+        x: 412
+        y: 256
+        width: 170
+        height: 104
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bfb7cd19c109d548a7b148c53f6f8bb
-      internalID: -1427859470
+      spriteID: 5da7b06f8f4335e4dbdfc91b089b098d
+      internalID: -1695350264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SP_Poses_Atlas_01_6
+      name: SP_Chairs_01_6
       rect:
         serializedVersion: 2
-        x: 396
-        y: 608
-        width: 331
-        height: 440
+        x: 652
+        y: 252
+        width: 110
+        height: 156
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2222fb0f8297f534481357e28b0aac5e
-      internalID: -1219043922
+      spriteID: 20c5a99f50aefd64d8b6f72c58192172
+      internalID: -1972693373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SP_Poses_Atlas_01_7
+      name: SP_Chairs_01_7
       rect:
         serializedVersion: 2
-        x: 782
-        y: 600
-        width: 331
-        height: 440
+        x: 36
+        y: 42
+        width: 254
+        height: 102
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4503aefdbf0ebe41928e1f213b65dec
-      internalID: -2103885571
+      spriteID: ca3d6fa52ea878c4d89c69b0fe002229
+      internalID: 690915744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SP_Poses_Atlas_01_8
+      name: SP_Chairs_01_8
       rect:
         serializedVersion: 2
-        x: 34
-        y: 517
-        width: 331
-        height: 397
-      alignment: 9
-      pivot: {x: 0.49625376, y: 0.5760921}
+        x: 370
+        y: 34
+        width: 110
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea56efdcab619cb4ba8b680442794913
-      internalID: -1461649585
+      spriteID: e3538686e273ff34a8e80a536785bd1a
+      internalID: 659462668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SP_Poses_Atlas_01_9
+      name: SP_Chairs_01_9
       rect:
         serializedVersion: 2
-        x: 1199
-        y: 547
-        width: 331
-        height: 440
+        x: 550
+        y: 36
+        width: 170
+        height: 104
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea9940aa14057e247b9fb2d72583494f
-      internalID: 1019966142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SP_Poses_Atlas_01_10
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 17
-        width: 331
-        height: 440
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e36edafcd2f4ae478c40ec9d3dae6eb
-      internalID: 759614234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SP_Poses_Atlas_01_11
-      rect:
-        serializedVersion: 2
-        x: 355
-        y: 40
-        width: 331
-        height: 440
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0a2ed505ed399b4c90d33e2a36421ff
-      internalID: -652681616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SP_Poses_Atlas_01_12
-      rect:
-        serializedVersion: 2
-        x: 790
-        y: 31
-        width: 331
-        height: 440
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3fcd3cc808f76f2458de373ec000a4d0
-      internalID: -1249062246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SP_Poses_Atlas_01_13
-      rect:
-        serializedVersion: 2
-        x: 1167
-        y: 75
-        width: 331
-        height: 440
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63e853d1e3fbddc46b3a134404cda6bb
-      internalID: 602346238
+      spriteID: ee3fc22e22fac724ea1a3506e75c4744
+      internalID: 418706684
       vertices: []
       indices: 
       edges: []
@@ -433,20 +337,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SP_Poses_Atlas_01_6: -1219043922
-      SP_Poses_Atlas_01_13: 602346238
-      SP_Poses_Atlas_01_8: -1461649585
-      SP_Poses_Atlas_01_12: -1249062246
-      SP_Poses_Atlas_01_2: -579071706
-      SP_Poses_Atlas_01_0: 630318209
-      SP_Poses_Atlas_01_5: -1427859470
-      SP_Poses_Atlas_01_4: 180240385
-      SP_Poses_Atlas_01_10: 759614234
-      SP_Poses_Atlas_01_3: -1074302328
-      SP_Poses_Atlas_01_7: -2103885571
-      SP_Poses_Atlas_01_9: 1019966142
-      SP_Poses_Atlas_01_11: -652681616
-      SP_Poses_Atlas_01_1: -1093976758
+      SP_Chairs_01_9: 418706684
+      SP_Chairs_01_4: 85058011
+      SP_Chairs_01_1: -1107975142
+      SP_Chairs_01_3: 2062549689
+      SP_Chairs_01_0: -314408433
+      SP_Chairs_01_5: -1695350264
+      SP_Chairs_01_2: 752053782
+      SP_Chairs_01_7: 690915744
+      SP_Chairs_01_6: -1972693373
+      SP_Chairs_01_8: 659462668
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
