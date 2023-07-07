@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{624433ff-3a4e-4d84-8774-47aec7a3120a}">
+		<property name="assetPath">
+			<value>Конец подсчета очков.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2980208333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{90c5b0e4-9c8c-40b6-904f-edb81c49a9d8}</destination>
+		</relationship>
+	</object>
+</objects>
