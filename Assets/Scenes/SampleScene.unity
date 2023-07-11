@@ -37161,8 +37161,8 @@ MonoBehaviour:
   bonus: {fileID: 1886317130}
   pauseBonus: 20
   priceChip: 15
-  music: {fileID: 0}
-  sfxSound: {fileID: 0}
+  music: {fileID: 1446357600}
+  sfxSound: {fileID: 185860815}
   musicSound: {fileID: 8300000, guid: 96f5691c9cf863c45a6c01d190380173, type: 3}
   bangSound: {fileID: 8300000, guid: f02f6939c2472eb4e84c5ef155224f3f, type: 3}
   settingsButton: {fileID: 743938176}
@@ -37239,8 +37239,8 @@ MonoBehaviour:
   music: {fileID: 652166567}
   sound: {fileID: 341684454}
   sence: {fileID: 701934923}
-  musicAudioSource: {fileID: 0}
-  soundAudioSource: {fileID: 0}
+  musicAudioSource: {fileID: 1446357600}
+  soundAudioSource: {fileID: 185860815}
 --- !u!114 &1846555614
 MonoBehaviour:
   m_ObjectHideFlags: 0

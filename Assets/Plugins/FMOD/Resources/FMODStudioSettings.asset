@@ -315,7 +315,6 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks:
-  - Music
   - Main
   Banks: []
   BanksToLoad: []
