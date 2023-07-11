@@ -46,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{dbf85462-a22c-4bdd-9431-f8fd1fe35d9a}">
+		<relationship name="masters">
+			<destination>{4523e98d-972a-45c7-96d9-443ca6ec48fa}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{7d114084-2800-44a6-a388-3414d2b15c9f}</destination>
 		</relationship>

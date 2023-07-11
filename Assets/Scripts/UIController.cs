@@ -18,7 +18,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private Transform den, table, btn0, btn1, btn2, title, menu, people, cooler, gus, guitar, mask, playerM;
     [SerializeField] private Text bonus;
     [SerializeField] private int pauseBonus, priceChip;
-    [SerializeField] private AudioSource source, sfxSound;
+    [SerializeField] private GameObject music, sfxSound;
     [SerializeField] private AudioClip musicSound, bangSound;
     [SerializeField] private Button settingsButton, shopButton;
 
@@ -40,7 +40,8 @@ public class UIController : MonoBehaviour
     {
         instance = this;
 
-        source.enabled = false;
+        music.SetActive(false);
+        sfxSound.SetActive(true);
         _hpCount = hp.Count;
         player.transform.position = _parkPlayer;
         SettingsController.instance.play = false;
@@ -61,7 +62,8 @@ public class UIController : MonoBehaviour
         await UniTask.Delay(400);
         player.transform.position = Vector2.zero;
 
-        source.enabled = true;
+        sfxSound.SetActive(false);
+        music.SetActive(true);
         panelMenu.SetActive(false);
         _hpCount = hp.Count;
         joystik.SetActive(true);
@@ -134,7 +136,8 @@ public class UIController : MonoBehaviour
 
         player.transform.position = Vector2.zero;
 
-        source.enabled = true;
+        sfxSound.SetActive(false);
+        music.SetActive(true);
         _hpCount = hp.Count;
         joystik.SetActive(true);
         joy.enabled = true;
@@ -230,7 +233,8 @@ public class UIController : MonoBehaviour
             item.StopAllCoroutines();
         }
 
-        source.enabled = false;
+        sfxSound.SetActive(true);
+        music.SetActive(false);
 
         joystik.SetActive(false);
         joy.enabled = false;

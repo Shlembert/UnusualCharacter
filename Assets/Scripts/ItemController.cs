@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 public enum TypeItem { obstacle, bonus}
@@ -8,7 +9,8 @@ public class ItemController : MonoBehaviour
     [SerializeField] private TypeItem type;
     [SerializeField] private ObstacleType bonus;
     [SerializeField] private float plusMood;
-    [SerializeField] private AudioClip audioClip;
+    //[SerializeField] private AudioClip audioClip;
+    [SerializeField] private StudioEventEmitter soundEmitter;
     [SerializeField] private GameObject area;
 
     private AudioSource audioSource;
@@ -35,7 +37,8 @@ public class ItemController : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<PlayerMovement>(out PlayerMovement player))
         {
-            audioSource.PlayOneShot(audioClip);
+            //audioSource.PlayOneShot(audioClip);
+            soundEmitter?.Play();
             ViewArea(false);
             if (type == TypeItem.obstacle)
             {

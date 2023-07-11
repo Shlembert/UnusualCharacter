@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,9 +9,11 @@ public class Volume : MonoBehaviour
     [SerializeField] private Slider music;
     [SerializeField] private Slider sound;
     [SerializeField] private Slider sence;
-    [SerializeField] private AudioSource musicAudioSource;
-    [SerializeField] private AudioSource soundAudioSource;
+    [SerializeField] private GameObject musicAudioSource;
+    [SerializeField] private GameObject soundAudioSource;
 
+    private VCA musicVca;
+    private VCA soundVca;
     private const string musicVolumeKey = "MusicVolume";
     private const string soundVolumeKey = "SoundVolume";
     private const string senceValueKey = "SenceValue";
@@ -21,6 +24,8 @@ public class Volume : MonoBehaviour
     {
         instance = this;
         LoadSettings();
+        soundVca = FMODUnity.RuntimeManager.GetVCA("vca:/Sounds");
+        musicVca = FMODUnity.RuntimeManager.GetVCA("vca:/Music");
     }
 
     private void Start()
@@ -35,13 +40,13 @@ public class Volume : MonoBehaviour
 
     private void OnMusicVolumeChanged(float value)
     {
-        musicAudioSource.volume = value;
+        musicVca.setVolume(value);
         SaveSettings();
     }
 
     private void OnSoundVolumeChanged(float value)
     {
-        soundAudioSource.volume = value;
+        soundVca.setVolume(value);
         SaveSettings();
     }
 
@@ -53,8 +58,14 @@ public class Volume : MonoBehaviour
 
     private void SaveSettings()
     {
-        PlayerPrefs.SetFloat(musicVolumeKey, musicAudioSource.volume);
-        PlayerPrefs.SetFloat(soundVolumeKey, soundAudioSource.volume);
+        float musicVolume;
+        musicVca.getVolume(out musicVolume);
+
+        float soundVolume;
+        soundVca.getVolume(out soundVolume);
+
+        PlayerPrefs.SetFloat(musicVolumeKey, musicVolume);
+        PlayerPrefs.SetFloat(soundVolumeKey, soundVolume);
         PlayerPrefs.SetFloat(senceValueKey, sence.value);
 
         PlayerPrefs.Save();
@@ -76,9 +87,8 @@ public class Volume : MonoBehaviour
         sound.value = soundVolume;
         sence.value = senceValue;
 
-        musicAudioSource.volume = musicVolume;
-        soundAudioSource.volume = soundVolume;
-
+        musicVca.setVolume(musicVolume);
+        soundVca.setVolume(soundVolume);
         
         PlayerMovement.instance.sence = senceValue;
     }
