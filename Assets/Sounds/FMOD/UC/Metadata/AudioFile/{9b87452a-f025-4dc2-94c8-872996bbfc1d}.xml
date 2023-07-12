@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{9b87452a-f025-4dc2-94c8-872996bbfc1d}">
+		<property name="assetPath">
+			<value>Вуш при появлении меню настроек.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.82456249999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{90c5b0e4-9c8c-40b6-904f-edb81c49a9d8}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{547c8b07-cd71-4939-802e-dc3b196f0b8b}">
 		<property name="name">
-			<value>Огнетушитель</value>
+			<value>fire extinguisher</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
