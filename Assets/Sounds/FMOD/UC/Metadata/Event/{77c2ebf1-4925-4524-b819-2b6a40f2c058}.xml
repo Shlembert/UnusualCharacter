@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{77c2ebf1-4925-4524-b819-2b6a40f2c058}">
 		<property name="name">
-			<value>Самокрутка</value>
+			<value>Blunt</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

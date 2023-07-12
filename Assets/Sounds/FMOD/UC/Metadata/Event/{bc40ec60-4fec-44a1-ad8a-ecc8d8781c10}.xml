@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{bc40ec60-4fec-44a1-ad8a-ecc8d8781c10}">
 		<property name="name">
-			<value>Меню после старта (вуши)</value>
+			<value>Menu after start (wushi)</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{49d4629d-04e2-4ab1-aaea-44ec78a12385}</destination>
@@ -62,11 +62,18 @@
 	<object class="EventAutomatableProperties" id="{4a25b823-305a-44d8-bd1b-a05a8cabc31a}" />
 	<object class="MarkerTrack" id="{f094c29f-37ac-4e85-91e3-9e8e478e46d4}" />
 	<object class="GroupTrack" id="{2c29a8a2-38c2-4172-b874-ca53168a6de1}">
+		<relationship name="modules">
+			<destination>{e7d9c80a-2af0-4def-a6b2-5ff8851569df}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{9a21be9f-4edd-4d22-99ea-d63af76384ab}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{c4ccddb4-0cde-4c76-87d8-315ff7c2e72a}" />
+	<object class="Timeline" id="{c4ccddb4-0cde-4c76-87d8-315ff7c2e72a}">
+		<relationship name="modules">
+			<destination>{e7d9c80a-2af0-4def-a6b2-5ff8851569df}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{83d57a89-89db-42cc-8270-2ef2043152e1}">
 		<relationship name="effectChain">
 			<destination>{9a143753-0120-4736-9d13-cd74857f7d32}</destination>
@@ -84,6 +91,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{87c23853-f84c-41de-8273-fd5e14ef442c}" />
+	<object class="SingleSound" id="{e7d9c80a-2af0-4def-a6b2-5ff8851569df}">
+		<property name="length">
+			<value>2.3105208333333334</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{bf92092a-25c2-49f5-9616-a4c5f61d25df}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{9a21be9f-4edd-4d22-99ea-d63af76384ab}">
 		<property name="name">
 			<value>Audio 1</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{37aada00-042e-4d21-a33b-e365a9467e08}">
 		<property name="name">
-			<value>Конец подсчета очков</value>
+			<value>End of scoring</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

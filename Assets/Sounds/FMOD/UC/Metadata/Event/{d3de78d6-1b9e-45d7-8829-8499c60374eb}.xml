@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{d3de78d6-1b9e-45d7-8829-8499c60374eb}">
 		<property name="name">
-			<value>Меню до старта (вушки)</value>
+			<value>Menu before start (wooshes)</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{49d4629d-04e2-4ab1-aaea-44ec78a12385}</destination>
@@ -62,11 +62,18 @@
 	<object class="EventAutomatableProperties" id="{38f4c5e8-6fdd-4235-9b7b-214cc16d758e}" />
 	<object class="MarkerTrack" id="{0beac1c0-28a3-450f-9f00-41ea889bd0a7}" />
 	<object class="GroupTrack" id="{bfc8bd06-062d-40f8-be58-fee7b6382c0f}">
+		<relationship name="modules">
+			<destination>{3aad551b-e5ca-484a-b795-0a808ff08a0b}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{ebd1b4ff-50bf-42e5-b503-8d87aec455bc}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{fffdb42e-43fd-4b01-9475-63f655909373}" />
+	<object class="Timeline" id="{fffdb42e-43fd-4b01-9475-63f655909373}">
+		<relationship name="modules">
+			<destination>{3aad551b-e5ca-484a-b795-0a808ff08a0b}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{fd86a8e0-65e3-48c7-8bf8-19265e257eb4}">
 		<relationship name="effectChain">
 			<destination>{b1dd7a66-17db-4d96-b33d-c825ba78cbad}</destination>
@@ -84,6 +91,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{999302e9-d296-42c5-a952-d8b2b7537d61}" />
+	<object class="SingleSound" id="{3aad551b-e5ca-484a-b795-0a808ff08a0b}">
+		<property name="length">
+			<value>2.3105208333333334</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{bf92092a-25c2-49f5-9616-a4c5f61d25df}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{ebd1b4ff-50bf-42e5-b503-8d87aec455bc}">
 		<property name="name">
 			<value>Audio 1</value>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0bfbf35f-e621-4a9e-b999-7817d99b9fd7}">
+		<property name="assetPath">
+			<value>Вуш при появлении необычный чел.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.58566666666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{90c5b0e4-9c8c-40b6-904f-edb81c49a9d8}</destination>
+		</relationship>
+	</object>
+</objects>
