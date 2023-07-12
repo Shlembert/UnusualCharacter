@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -9,8 +6,9 @@ public class Lang : MonoBehaviour
 {
     public static Lang instance;
 
-    [SerializeField] private Text start, score, setting, music, sound, sence, credits, exSet,
-        buy, exShop, pause, resum, restart, setBtn, wake, exPaus,pose,chair;
+    [SerializeField]
+    private Text start, score, setting, music, sound, sence, credits, exSet,
+        buy, exShop, pause, resum, restart, setBtn, wake, exPaus, pose, chair;
     public UnityEvent<bool> LangChenge;
 
     private void Awake()
