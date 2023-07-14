@@ -1008,6 +1008,7 @@ GameObject:
   - component: {fileID: 94040718}
   - component: {fileID: 94040717}
   - component: {fileID: 94040716}
+  - component: {fileID: 94040719}
   m_Layer: 5
   m_Name: DownBtn
   m_TagString: Untagged
@@ -1129,6 +1130,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94040714}
   m_CullTransparentMesh: 1
+--- !u!114 &94040719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94040714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &97238858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,7 +2345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198544755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16, y: -0.27079, z: -0.66414607}
+  m_LocalPosition: {x: 0.16, y: -0.22, z: -0.66414607}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2725,6 +2757,7 @@ GameObject:
   - component: {fileID: 265253082}
   - component: {fileID: 265253081}
   - component: {fileID: 265253080}
+  - component: {fileID: 265253083}
   m_Layer: 5
   m_Name: ExitBtn
   m_TagString: Untagged
@@ -2847,6 +2880,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265253078}
   m_CullTransparentMesh: 1
+--- !u!114 &265253083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265253078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &276126806
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,7 +3065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &282095172
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4177,7 +4241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -443564797, guid: 2a2b17b28487d2b43a9bc27e5b77b2ad, type: 3}
+  m_Sprite: {fileID: -953985967, guid: 5d378ebe89e47a54b8de7b58e60c1eca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4207,6 +4271,7 @@ GameObject:
   - component: {fileID: 376599715}
   - component: {fileID: 376599714}
   - component: {fileID: 376599713}
+  - component: {fileID: 376599716}
   m_Layer: 5
   m_Name: ButtonStart
   m_TagString: Untagged
@@ -4329,6 +4394,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376599711}
   m_CullTransparentMesh: 1
+--- !u!114 &376599716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376599711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &380580630
 GameObject:
   m_ObjectHideFlags: 0
@@ -4341,6 +4437,7 @@ GameObject:
   - component: {fileID: 380580634}
   - component: {fileID: 380580633}
   - component: {fileID: 380580632}
+  - component: {fileID: 380580635}
   m_Layer: 5
   m_Name: RighttBtn
   m_TagString: Untagged
@@ -4462,6 +4559,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380580630}
   m_CullTransparentMesh: 1
+--- !u!114 &380580635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380580630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &380971887
 GameObject:
   m_ObjectHideFlags: 0
@@ -10760,6 +10888,7 @@ GameObject:
   - component: {fileID: 496600044}
   - component: {fileID: 496600043}
   - component: {fileID: 496600042}
+  - component: {fileID: 496600045}
   m_Layer: 5
   m_Name: UpBtn
   m_TagString: Untagged
@@ -10881,6 +11010,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496600040}
   m_CullTransparentMesh: 1
+--- !u!114 &496600045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496600040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &498521059
 GameObject:
   m_ObjectHideFlags: 0
@@ -17648,7 +17808,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1382731771, guid: 2a2b17b28487d2b43a9bc27e5b77b2ad, type: 3}
+  m_Sprite: {fileID: -1233604804, guid: 5d378ebe89e47a54b8de7b58e60c1eca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17851,7 +18011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696476579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16, y: -0.257, z: -0.66414607}
+  m_LocalPosition: {x: 0.16, y: -0.186, z: -0.66414607}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18621,7 +18781,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -664098037, guid: 2a2b17b28487d2b43a9bc27e5b77b2ad, type: 3}
+  m_Sprite: {fileID: 969842019, guid: 5d378ebe89e47a54b8de7b58e60c1eca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18727,6 +18887,7 @@ GameObject:
   - component: {fileID: 743938178}
   - component: {fileID: 743938177}
   - component: {fileID: 743938176}
+  - component: {fileID: 743938179}
   m_Layer: 5
   m_Name: ButtonSet
   m_TagString: Untagged
@@ -18848,6 +19009,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743938174}
   m_CullTransparentMesh: 1
+--- !u!114 &743938179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743938174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &754283714
 GameObject:
   m_ObjectHideFlags: 0
@@ -18949,7 +19141,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763621934}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -18959,11 +19151,11 @@ RectTransform:
   - {fileID: 1608486236}
   m_Father: {fileID: 733619555}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 413.15, y: 95}
-  m_SizeDelta: {x: 162.56, y: 701.2}
+  m_AnchoredPosition: {x: 0, y: 862.9347}
+  m_SizeDelta: {x: 109.6, y: 542.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763621936
 MonoBehaviour:
@@ -18986,7 +19178,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -490109860, guid: 07d0c1344fcbf224aa2e039bea995005, type: 3}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -19473,6 +19665,7 @@ GameObject:
   - component: {fileID: 798662227}
   - component: {fileID: 798662226}
   - component: {fileID: 798662225}
+  - component: {fileID: 798662228}
   m_Layer: 5
   m_Name: UpBtn
   m_TagString: Untagged
@@ -19594,6 +19787,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798662223}
   m_CullTransparentMesh: 1
+--- !u!114 &798662228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798662223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &801402693
 GameObject:
   m_ObjectHideFlags: 0
@@ -19959,6 +20183,7 @@ GameObject:
   - component: {fileID: 841575285}
   - component: {fileID: 841575284}
   - component: {fileID: 841575283}
+  - component: {fileID: 841575286}
   m_Layer: 5
   m_Name: PauseBtn
   m_TagString: Untagged
@@ -20080,6 +20305,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841575281}
   m_CullTransparentMesh: 1
+--- !u!114 &841575286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841575281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &850015851
 GameObject:
   m_ObjectHideFlags: 0
@@ -20218,7 +20474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &862109820
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20518,7 +20774,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889147242}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15668778, y: -0.48278996, z: -0.66414607}
+  m_LocalPosition: {x: 0.198, y: -0.48278996, z: -0.66414607}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20751,6 +21007,7 @@ GameObject:
   - component: {fileID: 924424515}
   - component: {fileID: 924424514}
   - component: {fileID: 924424513}
+  - component: {fileID: 924424516}
   m_Layer: 5
   m_Name: SettingstBtn
   m_TagString: Untagged
@@ -20873,6 +21130,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924424511}
   m_CullTransparentMesh: 1
+--- !u!114 &924424516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924424511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &924845300
 GameObject:
   m_ObjectHideFlags: 0
@@ -21391,7 +21679,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -540889745, guid: 2a2b17b28487d2b43a9bc27e5b77b2ad, type: 3}
+  m_Sprite: {fileID: -2145668644, guid: 5d378ebe89e47a54b8de7b58e60c1eca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23164,7 +23452,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076667013}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15668778, y: -0.371, z: -0.66414607}
+  m_LocalPosition: {x: 0.15668778, y: -0.339, z: -0.66414607}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23332,6 +23620,7 @@ GameObject:
   - component: {fileID: 1086544556}
   - component: {fileID: 1086544555}
   - component: {fileID: 1086544554}
+  - component: {fileID: 1086544557}
   m_Layer: 0
   m_Name: RestartButton
   m_TagString: Untagged
@@ -23442,6 +23731,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086544552}
   m_CullTransparentMesh: 1
+--- !u!114 &1086544557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086544552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1114727816
 GameObject:
   m_ObjectHideFlags: 0
@@ -23454,6 +23774,7 @@ GameObject:
   - component: {fileID: 1114727820}
   - component: {fileID: 1114727819}
   - component: {fileID: 1114727818}
+  - component: {fileID: 1114727821}
   m_Layer: 5
   m_Name: ExitBtn (1)
   m_TagString: Untagged
@@ -23576,6 +23897,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114727816}
   m_CullTransparentMesh: 1
+--- !u!114 &1114727821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114727816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1120876171
 GameObject:
   m_ObjectHideFlags: 0
@@ -24113,7 +24465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1868974186, guid: 2a2b17b28487d2b43a9bc27e5b77b2ad, type: 3}
+  m_Sprite: {fileID: 1930496023, guid: 5d378ebe89e47a54b8de7b58e60c1eca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24801,6 +25153,7 @@ GameObject:
   - component: {fileID: 1216119075}
   - component: {fileID: 1216119074}
   - component: {fileID: 1216119073}
+  - component: {fileID: 1216119076}
   m_Layer: 0
   m_Name: ToMenu
   m_TagString: Untagged
@@ -24923,6 +25276,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1216119071}
   m_CullTransparentMesh: 1
+--- !u!114 &1216119076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216119071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1227225299
 GameObject:
   m_ObjectHideFlags: 0
@@ -25137,6 +25521,7 @@ GameObject:
   - component: {fileID: 1248307463}
   - component: {fileID: 1248307462}
   - component: {fileID: 1248307461}
+  - component: {fileID: 1248307464}
   m_Layer: 5
   m_Name: ExitBtn
   m_TagString: Untagged
@@ -25259,6 +25644,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248307459}
   m_CullTransparentMesh: 1
+--- !u!114 &1248307464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248307459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1252878044
 GameObject:
   m_ObjectHideFlags: 0
@@ -25567,7 +25983,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1480210169
   m_SortingLayer: 1
-  m_SortingOrder: 51
+  m_SortingOrder: 55
   m_Sprite: {fileID: 21300000, guid: d3de9753778b1084db281d3368bf2efd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.8627451}
   m_FlipX: 0
@@ -25768,6 +26184,7 @@ GameObject:
   - component: {fileID: 1309103255}
   - component: {fileID: 1309103254}
   - component: {fileID: 1309103253}
+  - component: {fileID: 1309103256}
   m_Layer: 5
   m_Name: ButtonExit
   m_TagString: Untagged
@@ -25890,6 +26307,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309103251}
   m_CullTransparentMesh: 1
+--- !u!114 &1309103256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309103251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1320018828
 GameObject:
   m_ObjectHideFlags: 0
@@ -27058,7 +27506,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10101357, guid: 2a2b17b28487d2b43a9bc27e5b77b2ad, type: 3}
+  m_Sprite: {fileID: -1885970488, guid: 5d378ebe89e47a54b8de7b58e60c1eca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27168,6 +27616,7 @@ GameObject:
   - component: {fileID: 1404888688}
   - component: {fileID: 1404888687}
   - component: {fileID: 1404888686}
+  - component: {fileID: 1404888690}
   m_Layer: 5
   m_Name: PurchaseBtn
   m_TagString: Untagged
@@ -27278,6 +27727,37 @@ RectTransform:
   m_AnchoredPosition: {x: -251.6001, y: -398.80005}
   m_SizeDelta: {x: 552.3, y: 264.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1404888690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404888685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1431074116
 GameObject:
   m_ObjectHideFlags: 0
@@ -27849,7 +28329,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513567488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16, y: -0.179, z: -0.66414607}
+  m_LocalPosition: {x: 0.16, y: -0.143, z: -0.66414607}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33072,6 +33552,7 @@ GameObject:
   - component: {fileID: 1586487518}
   - component: {fileID: 1586487517}
   - component: {fileID: 1586487516}
+  - component: {fileID: 1586487519}
   m_Layer: 5
   m_Name: RestartBtn
   m_TagString: Untagged
@@ -33194,6 +33675,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586487514}
   m_CullTransparentMesh: 1
+--- !u!114 &1586487519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586487514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1586537824
 GameObject:
   m_ObjectHideFlags: 0
@@ -33625,7 +34137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 532, y: -244.2}
+  m_AnchoredPosition: {x: 563, y: -244.2}
   m_SizeDelta: {x: 535.2, y: 653.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1613272967
@@ -33648,7 +34160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 625082689, guid: 2a2b17b28487d2b43a9bc27e5b77b2ad, type: 3}
+  m_Sprite: {fileID: -722408140, guid: 5d378ebe89e47a54b8de7b58e60c1eca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34342,6 +34854,7 @@ GameObject:
   - component: {fileID: 1656081028}
   - component: {fileID: 1656081027}
   - component: {fileID: 1656081026}
+  - component: {fileID: 1656081029}
   m_Layer: 5
   m_Name: CreditsBtn
   m_TagString: Untagged
@@ -34452,6 +34965,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656081024}
   m_CullTransparentMesh: 1
+--- !u!114 &1656081029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656081024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1663606561
 GameObject:
   m_ObjectHideFlags: 0
@@ -34548,6 +35092,7 @@ GameObject:
   - component: {fileID: 1678352981}
   - component: {fileID: 1678352980}
   - component: {fileID: 1678352979}
+  - component: {fileID: 1678352982}
   m_Layer: 5
   m_Name: LeftBtn
   m_TagString: Untagged
@@ -34669,6 +35214,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678352977}
   m_CullTransparentMesh: 1
+--- !u!114 &1678352982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678352977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1682422142
 GameObject:
   m_ObjectHideFlags: 0
@@ -34766,6 +35342,7 @@ GameObject:
   - component: {fileID: 1683995900}
   - component: {fileID: 1683995899}
   - component: {fileID: 1683995898}
+  - component: {fileID: 1683995902}
   m_Layer: 5
   m_Name: CredTxt
   m_TagString: Untagged
@@ -34894,6 +35471,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683995896}
   m_CullTransparentMesh: 1
+--- !u!114 &1683995902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683995896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1685820931
 GameObject:
   m_ObjectHideFlags: 0
@@ -35005,6 +35613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1688311130}
   - component: {fileID: 1688311131}
+  - component: {fileID: 1688311132}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -35049,6 +35658,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1688311132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688311129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1756227622
+      Data2: 1272566301
+      Data3: 1575651971
+      Data4: -2036740766
+    Path: event:/Vzletenie
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1714578459
 GameObject:
   m_ObjectHideFlags: 0
@@ -35186,8 +35826,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.71, y: 8.73}
-  m_SizeDelta: {x: 133.14, y: 683.73}
+  m_AnchoredPosition: {x: -11.18, y: 3.369999}
+  m_SizeDelta: {x: 88.79, y: 535.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1717063940
 MonoBehaviour:
@@ -35223,7 +35863,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 00f8c84346fbbb84fb2f9e4a082f347b, type: 3}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -35717,6 +36357,7 @@ GameObject:
   - component: {fileID: 1751490108}
   - component: {fileID: 1751490107}
   - component: {fileID: 1751490106}
+  - component: {fileID: 1751490109}
   m_Layer: 5
   m_Name: ChairButton
   m_TagString: Untagged
@@ -35851,6 +36492,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751490104}
   m_CullTransparentMesh: 1
+--- !u!114 &1751490109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751490104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1752639892
 GameObject:
   m_ObjectHideFlags: 0
@@ -36345,6 +37017,7 @@ GameObject:
   - component: {fileID: 1802145240}
   - component: {fileID: 1802145239}
   - component: {fileID: 1802145238}
+  - component: {fileID: 1802145241}
   m_Layer: 5
   m_Name: PurchaseBtn
   m_TagString: Untagged
@@ -36455,6 +37128,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802145236}
   m_CullTransparentMesh: 1
+--- !u!114 &1802145241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802145236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1811930048
 GameObject:
   m_ObjectHideFlags: 0
@@ -36467,6 +37171,7 @@ GameObject:
   - component: {fileID: 1811930052}
   - component: {fileID: 1811930051}
   - component: {fileID: 1811930050}
+  - component: {fileID: 1811930053}
   m_Layer: 5
   m_Name: DownBtn
   m_TagString: Untagged
@@ -36588,6 +37293,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811930048}
   m_CullTransparentMesh: 1
+--- !u!114 &1811930053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811930048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1817978527
 GameObject:
   m_ObjectHideFlags: 0
@@ -36762,7 +37498,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 36105786, guid: 2a2b17b28487d2b43a9bc27e5b77b2ad, type: 3}
+  m_Sprite: {fileID: -1247743416, guid: 5d378ebe89e47a54b8de7b58e60c1eca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -36952,6 +37688,7 @@ GameObject:
   - component: {fileID: 1842430508}
   - component: {fileID: 1842430507}
   - component: {fileID: 1842430506}
+  - component: {fileID: 1842430509}
   m_Layer: 5
   m_Name: ResumeBtn
   m_TagString: Untagged
@@ -37074,6 +37811,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842430504}
   m_CullTransparentMesh: 1
+--- !u!114 &1842430509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842430504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1846555606
 GameObject:
   m_ObjectHideFlags: 0
@@ -37884,7 +38652,7 @@ RectTransform:
   m_GameObject: {fileID: 1909735031}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0265, y: 1.0265, z: 1.0265}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1165569746}
@@ -37892,7 +38660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 503.14996, y: 169.29993}
+  m_AnchoredPosition: {x: 503.14996, y: 183}
   m_SizeDelta: {x: 318, y: 160.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1909735033
@@ -37915,7 +38683,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1920130653, guid: 2a2b17b28487d2b43a9bc27e5b77b2ad, type: 3}
+  m_Sprite: {fileID: 2092107829, guid: 5d378ebe89e47a54b8de7b58e60c1eca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -38126,6 +38894,7 @@ GameObject:
   - component: {fileID: 1948442975}
   - component: {fileID: 1948442974}
   - component: {fileID: 1948442973}
+  - component: {fileID: 1948442976}
   m_Layer: 5
   m_Name: WakeBtn
   m_TagString: Untagged
@@ -38248,6 +39017,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1948442971}
   m_CullTransparentMesh: 1
+--- !u!114 &1948442976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948442971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &1949481578
 GameObject:
   m_ObjectHideFlags: 0
@@ -38990,6 +39790,7 @@ GameObject:
   - component: {fileID: 2013314875}
   - component: {fileID: 2013314874}
   - component: {fileID: 2013314873}
+  - component: {fileID: 2013314876}
   m_Layer: 5
   m_Name: ExitBtn (1)
   m_TagString: Untagged
@@ -39112,6 +39913,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013314871}
   m_CullTransparentMesh: 1
+--- !u!114 &2013314876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013314871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &2019839486 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8170153791668043269, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
@@ -39516,6 +40348,7 @@ GameObject:
   - component: {fileID: 2070611058}
   - component: {fileID: 2070611057}
   - component: {fileID: 2070611056}
+  - component: {fileID: 2070611059}
   m_Layer: 5
   m_Name: ButtonShop
   m_TagString: Untagged
@@ -39637,6 +40470,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070611054}
   m_CullTransparentMesh: 1
+--- !u!114 &2070611059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070611054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &2072064989
 GameObject:
   m_ObjectHideFlags: 0
@@ -40452,6 +41316,7 @@ GameObject:
   - component: {fileID: 2118361708}
   - component: {fileID: 2118361707}
   - component: {fileID: 2118361706}
+  - component: {fileID: 2118361709}
   m_Layer: 5
   m_Name: PoseButton
   m_TagString: Untagged
@@ -40586,6 +41451,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118361704}
   m_CullTransparentMesh: 1
+--- !u!114 &2118361709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118361704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &2129957951
 GameObject:
   m_ObjectHideFlags: 0
@@ -40621,8 +41517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.47, y: 2.81}
-  m_SizeDelta: {x: 112.39, y: 648.07}
+  m_AnchoredPosition: {x: 1.47, y: 2.8099499}
+  m_SizeDelta: {x: 112.39, y: 542.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2129957953
 MonoBehaviour:
