@@ -104,7 +104,7 @@ MonoBehaviour:
   rb: {fileID: 4654746823718181105}
   type: 1
   bonus: 6
-  plusMood: 25
+  plusMood: 5
   soundEmitter: {fileID: -951077218517960776}
   area: {fileID: 7774425781141577397}
 --- !u!58 &7944767023524216173
