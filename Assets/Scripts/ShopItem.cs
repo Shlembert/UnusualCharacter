@@ -7,7 +7,7 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
     [SerializeField] private string PlayerPrefsKey;
     [SerializeField] private Button buyButton;
     [SerializeField] private Text buyButtonText;
-    [SerializeField] private Image sprite;
+    [SerializeField] private Sprite sprite;
     [SerializeField] private int price;
     [SerializeField] private Image slot;
     [SerializeField] private Text priceText;
@@ -36,7 +36,7 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
     {
         buyButton.onClick.RemoveAllListeners();
         buyButton.onClick.AddListener(BuyButtonPressed);
-        slot.sprite = sprite.sprite;
+        slot.sprite = sprite;
         int isBuyed = PlayerPrefs.GetInt(PlayerPrefsKey + index, index == 0 ? 1 : 0);
         UpdateText(isBuyed == 1);
         

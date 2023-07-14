@@ -4863,7 +4863,7 @@ MonoBehaviour:
   PlayerPrefsKey: Pose
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
-  sprite: {fileID: 1037198874}
+  sprite: {fileID: -540019427, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   price: 30
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
@@ -10077,7 +10077,7 @@ MonoBehaviour:
   PlayerPrefsKey: Chair
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
-  sprite: {fileID: 766044597}
+  sprite: {fileID: 0}
   price: 10
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
@@ -10261,7 +10261,7 @@ MonoBehaviour:
   PlayerPrefsKey: Chair
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
-  sprite: {fileID: 520563690}
+  sprite: {fileID: 0}
   price: 40
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
@@ -17945,8 +17945,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 280, y: 280}
+  m_AnchoredPosition: {x: -3.7, y: 0}
+  m_SizeDelta: {x: 221.1, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &695722814
 MonoBehaviour:
@@ -17968,7 +17968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -652681616, guid: 39a9975607778a74c9b8fc4c4358eb04, type: 3}
+  m_Sprite: {fileID: -1440596876, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18216,7 +18216,7 @@ MonoBehaviour:
   PlayerPrefsKey: Chair
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
-  sprite: {fileID: 1851540513}
+  sprite: {fileID: 0}
   price: 30
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
@@ -18316,7 +18316,7 @@ MonoBehaviour:
   PlayerPrefsKey: Chair
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
-  sprite: {fileID: 1598827707}
+  sprite: {fileID: 0}
   price: 20
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
@@ -19396,8 +19396,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 280, y: 280}
+  m_AnchoredPosition: {x: -1.4, y: 0}
+  m_SizeDelta: {x: 176.4, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773608626
 MonoBehaviour:
@@ -19419,7 +19419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2103885571, guid: 39a9975607778a74c9b8fc4c4358eb04, type: 3}
+  m_Sprite: {fileID: 2059624877, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22716,8 +22716,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 280, y: 280}
+  m_AnchoredPosition: {x: -2.4, y: 0}
+  m_SizeDelta: {x: 195.2, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1037198874
 MonoBehaviour:
@@ -22739,7 +22739,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1461649585, guid: 39a9975607778a74c9b8fc4c4358eb04, type: 3}
+  m_Sprite: {fileID: -524842164, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24669,7 +24669,7 @@ MonoBehaviour:
   PlayerPrefsKey: Pose
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
-  sprite: {fileID: 1586537826}
+  sprite: {fileID: -793580559, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   price: 50
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
@@ -24845,7 +24845,7 @@ MonoBehaviour:
   PlayerPrefsKey: Pose
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
-  sprite: {fileID: 1629158757}
+  sprite: {fileID: -1324382391, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   price: 0
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
@@ -25984,7 +25984,7 @@ SpriteRenderer:
   m_SortingLayerID: -1480210169
   m_SortingLayer: 1
   m_SortingOrder: 55
-  m_Sprite: {fileID: 21300000, guid: d3de9753778b1084db281d3368bf2efd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 56d0b889a032f7045b5e843cbabb22c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.8627451}
   m_FlipX: 0
   m_FlipY: 0
@@ -26797,8 +26797,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00004208818, y: 0}
-  m_SizeDelta: {x: 280, y: 280}
+  m_AnchoredPosition: {x: 0, y: -9.6}
+  m_SizeDelta: {x: 272.8, y: 217.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1348656392
 MonoBehaviour:
@@ -26820,7 +26820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1019966142, guid: 39a9975607778a74c9b8fc4c4358eb04, type: 3}
+  m_Sprite: {fileID: -1122502694, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27851,7 +27851,7 @@ MonoBehaviour:
   PlayerPrefsKey: Pose
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
-  sprite: {fileID: 695722814}
+  sprite: {fileID: 379723018, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   price: 60
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
@@ -33741,8 +33741,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 280, y: 280}
+  m_AnchoredPosition: {x: 2, y: 0}
+  m_SizeDelta: {x: 188.3, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1586537826
 MonoBehaviour:
@@ -33764,7 +33764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 759614234, guid: 39a9975607778a74c9b8fc4c4358eb04, type: 3}
+  m_Sprite: {fileID: -1763298479, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34465,8 +34465,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 280, y: 280}
+  m_AnchoredPosition: {x: 2, y: -5.9}
+  m_SizeDelta: {x: 205.2, y: 291.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629158757
 MonoBehaviour:
@@ -34488,7 +34488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 630318209, guid: 39a9975607778a74c9b8fc4c4358eb04, type: 3}
+  m_Sprite: {fileID: -718340238, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -35782,7 +35782,7 @@ MonoBehaviour:
   PlayerPrefsKey: Pose
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
-  sprite: {fileID: 1348656392}
+  sprite: {fileID: -1329931210, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   price: 40
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
@@ -36718,8 +36718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 280, y: 280}
+  m_AnchoredPosition: {x: 1.4, y: 0}
+  m_SizeDelta: {x: 198.8, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1758471834
 MonoBehaviour:
@@ -36741,7 +36741,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1219043922, guid: 39a9975607778a74c9b8fc4c4358eb04, type: 3}
+  m_Sprite: {fileID: -1863158384, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -38423,7 +38423,7 @@ MonoBehaviour:
   PlayerPrefsKey: Pose
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
-  sprite: {fileID: 773608626}
+  sprite: {fileID: 530439149, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   price: 20
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
@@ -39159,7 +39159,7 @@ MonoBehaviour:
   PlayerPrefsKey: Chair
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
-  sprite: {fileID: 654586764}
+  sprite: {fileID: 0}
   price: 0
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
@@ -40635,7 +40635,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 630318209, guid: 39a9975607778a74c9b8fc4c4358eb04, type: 3}
+  m_Sprite: {fileID: -1324382391, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -41075,7 +41075,7 @@ MonoBehaviour:
   PlayerPrefsKey: Pose
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
-  sprite: {fileID: 1758471834}
+  sprite: {fileID: -1056404174, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
   price: 10
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
