@@ -163,7 +163,7 @@ MonoBehaviour:
       Data2: 1127125021
       Data3: -1441996409
       Data4: -1105662929
-    Path: "event:/\u041E\u0431\u044A\u0435\u043A\u0442\u044B/\u0411\u0443\u043C\u0430\u0436\u043A\u0438"
+    Path: event:/Objects/Pappers
   Event: 
   PlayEvent: 0
   StopEvent: 0

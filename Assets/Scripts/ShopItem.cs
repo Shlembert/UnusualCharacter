@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -14,8 +15,10 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
     [SerializeField] private int index;
     [SerializeField] private Text coinText;
     [SerializeField] private GameObject itemChengerGO;
+    [SerializeField] private StudioEventEmitter studioEventEmitter;
     private IItemChenger itemChenger;
     private bool en;
+
 
     private void Start()
     {
@@ -29,6 +32,7 @@ public class ShopItem : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        studioEventEmitter.Play();
         Select();
     }
 

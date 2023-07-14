@@ -5036,6 +5036,7 @@ GameObject:
   - component: {fileID: 6398217896164764847}
   - component: {fileID: 3318500198068425738}
   - component: {fileID: 6181455235298861110}
+  - component: {fileID: 5418933834052163472}
   m_Layer: 7
   m_Name: firefix
   m_TagString: Untagged
@@ -5197,10 +5198,41 @@ MonoBehaviour:
       Data2: 1228524913
       Data3: 1004285568
       Data4: -1962184935
-    Path: "event:/\u041E\u0431\u044A\u0435\u043A\u0442\u044B/\u041E\u0433\u043D\u0435\u0442\u0443\u0448\u0438\u0442\u0435\u043B\u044C"
+    Path: event:/Objects/fire extinguisher
   Event: 
   PlayEvent: 11
   StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &5418933834052163472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8811813938841938336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1796121514
+      Data2: 1131798992
+      Data3: 1384627855
+      Data4: -2003873119
+    Path: event:/Objects/fire extinguisher bump
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

@@ -75,13 +75,14 @@ public class ItemController : MonoBehaviour
                 break;
             case ObstacleType.Chip: 
                 UIController.instance.PlusCoins();
-                //MoodController.instance.UpMood(plusMood);
+                MoodController.instance.UpMood(plusMood);
                 break;
             case ObstacleType.Guitar:
                 MoodController.instance.UpMood(plusMood);
                 break;
             case ObstacleType.Plan:
-                MoodController.instance.MoveDedlineUp();
+                MoodController.instance.UpMood(plusMood);
+                MoodController.instance.MoveDedlineDown();
                 break;
             case ObstacleType.Default:
                 break;

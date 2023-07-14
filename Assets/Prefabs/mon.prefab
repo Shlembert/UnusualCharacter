@@ -278,7 +278,7 @@ MonoBehaviour:
       Data2: 1183466090
       Data3: 1498053509
       Data4: 462288583
-    Path: "event:/\u041E\u0431\u044A\u0435\u043A\u0442\u044B/\u041C\u043E\u043D\u0438\u0442\u043E\u0440"
+    Path: event:/Objects/Monitor
   Event: 
   PlayEvent: 0
   StopEvent: 0

@@ -173,7 +173,7 @@ MonoBehaviour:
       Data2: 1158997077
       Data3: -842743905
       Data4: 1457855497
-    Path: "event:/\u041E\u0431\u044A\u0435\u043A\u0442\u044B/\u041A\u043E\u043C\u043F"
+    Path: event:/Objects/Komp
   Event: 
   PlayEvent: 0
   StopEvent: 0

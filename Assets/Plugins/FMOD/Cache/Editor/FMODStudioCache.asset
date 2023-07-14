@@ -22,11 +22,11 @@ MonoBehaviour:
   - {fileID: -4568246401667841921}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 125
+  Length: 115
 --- !u!114 &-7107702322342567426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +81,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3392
+--- !u!114 &-5244391329783775549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Objects/fire extinguisher bump
+  m_EditorClassIdentifier: 
+  Path: event:/Objects/fire extinguisher bump
+  Guid:
+    Data1: 1796121514
+    Data2: 1131798992
+    Data3: 1384627855
+    Data4: -2003873119
+  Banks:
+  - {fileID: -4568246401667841921}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1767
 --- !u!114 &-4568246401667841921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,10 +123,10 @@ MonoBehaviour:
   Path: Assets/Sounds/FMOD/UC/Build/Desktop/Main.bank
   Name: Main
   StudioPath: bank:/Main
-  lastModified: 638247801480635774
+  lastModified: 638249565160392382
   FileSizes:
   - Name: Desktop
-    Value: 3615328
+    Value: 3657120
   Exists: 1
 --- !u!114 &-3960108607021370723
 MonoBehaviour:
@@ -116,10 +143,10 @@ MonoBehaviour:
   Path: Assets/Sounds/FMOD/UC/Build/Desktop/Main.strings.bank
   Name: Main.strings
   StudioPath: bank:/Main.strings
-  lastModified: 638247801480705383
+  lastModified: 638249565160412365
   FileSizes:
   - Name: Desktop
-    Value: 1606
+    Value: 1796
   Exists: 1
 --- !u!114 &-2841735728100614042
 MonoBehaviour:
@@ -147,7 +174,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 500
+  Length: 941
+--- !u!114 &-1928872578102098758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Alarm
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Alarm
+  Guid:
+    Data1: -2079374022
+    Data2: 1178740043
+    Data3: 1602917276
+    Data4: 346275838
+  Banks:
+  - {fileID: -4568246401667841921}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2310
 --- !u!114 &-1594084580988015575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +228,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 811
+  Length: 1475
 --- !u!114 &-1586095502982517724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +255,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1298
+  Length: 1198
 --- !u!114 &-60228633809774737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,12 +316,15 @@ MonoBehaviour:
   - {fileID: 1022501326039110748}
   - {fileID: -60228633809774737}
   - {fileID: 2757814986525856575}
+  - {fileID: 2688780699779293318}
+  - {fileID: -5244391329783775549}
+  - {fileID: -1928872578102098758}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4568246401667841921}
   StringsBanks:
   - {fileID: -3960108607021370723}
-  cacheTime: 638247801480705383
+  cacheTime: 638249565160412365
   cacheVersion: 131605
 --- !u!114 &1022501326039110748
 MonoBehaviour:
@@ -377,6 +434,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3424
+--- !u!114 &2688780699779293318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Menu Click
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Menu Click
+  Guid:
+    Data1: 1353655304
+    Data2: 1252468957
+    Data3: -1123179386
+    Data4: -1013917138
+  Banks:
+  - {fileID: -4568246401667841921}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 158
 --- !u!114 &2757814986525856575
 MonoBehaviour:
   m_ObjectHideFlags: 0

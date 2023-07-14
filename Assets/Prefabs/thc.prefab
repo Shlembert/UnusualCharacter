@@ -163,7 +163,7 @@ MonoBehaviour:
       Data2: 1160005925
       Data3: 1781209528
       Data4: 1489039936
-    Path: "event:/\u041E\u0431\u044A\u0435\u043A\u0442\u044B/\u0421\u0430\u043C\u043E\u043A\u0440\u0443\u0442\u043A\u0430"
+    Path: event:/Objects/Blunt
   Event: 
   PlayEvent: 0
   StopEvent: 0

@@ -268,7 +268,7 @@ MonoBehaviour:
       Data2: 1131781548
       Data3: 437719725
       Data4: -158999073
-    Path: "event:/\u041E\u0431\u044A\u0435\u043A\u0442\u044B/\u0424\u0438\u0448\u043A\u0430"
+    Path: event:/Objects/Chip
   Event: 
   PlayEvent: 0
   StopEvent: 0

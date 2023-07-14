@@ -1,4 +1,5 @@
 using DG.Tweening;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,7 @@ public class MoodController : MonoBehaviour
     [SerializeField] private float dedUp1, dedUp2, dedUp3;
     [SerializeField] private Image moodFill;
     [SerializeField] private float decayRate, replenishmentRate, dedlineSpeed;
+    [SerializeField] private StudioEventEmitter studioEventEmitter;
 
     private float step = 0;
     private float deadTextPosY;
@@ -33,7 +35,7 @@ public class MoodController : MonoBehaviour
         moodFill.gameObject.SetActive(value);
     }
 
-    public void UpMood(float value)
+    public void UpMood(float value) 
     {
         decay = false;
        // upMood = true;
@@ -78,6 +80,7 @@ public class MoodController : MonoBehaviour
     {
         if (moodFill.fillAmount <= 0.25f && !check1)
         {
+            studioEventEmitter.Play();
             check1 = true;
             dedline.DOMoveY(dedUp1, dedlineSpeed, false);
             dedText.DOMoveY(-4.25f, dedlineSpeed, false);
@@ -98,10 +101,11 @@ public class MoodController : MonoBehaviour
         }
     }
 
-    public void MoveDedlineUp()
+    public void MoveDedlineDown()
     {
         if (dedline.position.y == dedUp1)
         {
+            studioEventEmitter.Stop();
             dedline.DOMoveY(-14, dedlineSpeed, false).OnComplete(() => { check1 = false; });
             dedText.DOMoveY(deadTextPosY, dedlineSpeed, false);
         }
