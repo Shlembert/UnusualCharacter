@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: Assets/Sounds/FMOD/UC/Build/Desktop/Main.bank
   Name: Main
   StudioPath: bank:/Main
-  lastModified: 638249125677309267
+  lastModified: 638247801480635774
   FileSizes:
   - Name: Desktop
     Value: 3615328
@@ -116,7 +116,7 @@ MonoBehaviour:
   Path: Assets/Sounds/FMOD/UC/Build/Desktop/Main.strings.bank
   Name: Main.strings
   StudioPath: bank:/Main.strings
-  lastModified: 638249125677319271
+  lastModified: 638247801480705383
   FileSizes:
   - Name: Desktop
     Value: 1606
@@ -267,7 +267,7 @@ MonoBehaviour:
   - {fileID: -4568246401667841921}
   StringsBanks:
   - {fileID: -3960108607021370723}
-  cacheTime: 638249125677319271
+  cacheTime: 638247801480705383
   cacheVersion: 131605
 --- !u!114 &1022501326039110748
 MonoBehaviour:
