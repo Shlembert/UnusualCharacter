@@ -4969,7 +4969,7 @@ MonoBehaviour:
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
   sprite: {fileID: -540019427, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
-  price: 30
+  price: 1000
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
   index: 3
@@ -10216,7 +10216,7 @@ MonoBehaviour:
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
   sprite: {fileID: 812620813, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
-  price: 10
+  price: 300
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
   index: 1
@@ -10433,7 +10433,7 @@ MonoBehaviour:
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
   sprite: {fileID: -1028582281, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
-  price: 40
+  price: 1800
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
   index: 4
@@ -18434,7 +18434,7 @@ MonoBehaviour:
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
   sprite: {fileID: 242543679, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
-  price: 30
+  price: 1000
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
   index: 3
@@ -18567,7 +18567,7 @@ MonoBehaviour:
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
   sprite: {fileID: 177371621, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
-  price: 20
+  price: 600
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
   index: 2
@@ -25101,7 +25101,7 @@ MonoBehaviour:
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
   sprite: {fileID: -793580559, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
-  price: 50
+  price: 2200
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
   index: 5
@@ -28397,7 +28397,7 @@ MonoBehaviour:
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
   sprite: {fileID: 379723018, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
-  price: 60
+  price: 3000
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
   index: 6
@@ -36409,7 +36409,7 @@ MonoBehaviour:
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
   sprite: {fileID: -1329931210, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
-  price: 40
+  price: 1500
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
   index: 4
@@ -38894,7 +38894,7 @@ MonoBehaviour:
   dedUp2: -8
   dedUp3: 0
   moodFill: {fileID: 2129957953}
-  decayRate: 0.025
+  decayRate: 0.01925
   replenishmentRate: 0.25
   dedlineSpeed: 2
   studioEventEmitter: {fileID: 1846555615}
@@ -39396,7 +39396,7 @@ MonoBehaviour:
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
   sprite: {fileID: 530439149, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
-  price: 20
+  price: 600
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
   index: 2
@@ -42150,7 +42150,7 @@ MonoBehaviour:
   buyButton: {fileID: 1802145238}
   buyButtonText: {fileID: 1847174861}
   sprite: {fileID: -1056404174, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
-  price: 10
+  price: 300
   slot: {fileID: 2075034538}
   priceText: {fileID: 180130913}
   index: 1
