@@ -1,5 +1,6 @@
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using FMODUnity;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -14,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private SpriteRenderer denHeadSprite, denBodySprite, crossSprite, seatSprite, backrestSprite;
     [SerializeField] private ParticleSystem particle,starParticle;
     [SerializeField] private Animator faceAnimator;
-    
+    [SerializeField] private StudioEventEmitter stun,music;
 
     private new Rigidbody2D rigidbody;
     private CapsuleCollider2D capsuleCollider;
@@ -61,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void Damage()
     {
+        stun.Play();
+        music.SetParameter("STUN", 1f);
         starParticle.Play();
         SetLayerRecursively(gameObject, obstacleLayer);
         immune = true;
@@ -68,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
         faceAnimator.SetInteger("Heals",UIController.instance.HpCount);
         Blinking();
     }
+
+
 
     public void PsPlay()
     {
@@ -106,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
             backrestSprite.DOFade(1, 0.2f);
             await UniTask.Delay(200);
         }
-
+        music.SetParameter("STUN", 0f);
         immune = false;
         faceAnimator.SetBool("Dizziness", immune);
         SetLayerRecursively(gameObject, defaultLayer);

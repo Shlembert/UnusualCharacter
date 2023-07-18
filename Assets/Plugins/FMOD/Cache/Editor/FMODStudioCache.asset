@@ -80,7 +80,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3392
+  Length: 3322
 --- !u!114 &-5244391329783775549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +123,10 @@ MonoBehaviour:
   Path: Assets/Sounds/FMOD/UC/Build/Desktop/Main.bank
   Name: Main
   StudioPath: bank:/Main
-  lastModified: 638249620187530267
+  lastModified: 638249821120000000
   FileSizes:
   - Name: Desktop
-    Value: 3657120
+    Value: 3899424
   Exists: 1
 --- !u!114 &-3960108607021370723
 MonoBehaviour:
@@ -143,11 +143,38 @@ MonoBehaviour:
   Path: Assets/Sounds/FMOD/UC/Build/Desktop/Main.strings.bank
   Name: Main.strings
   StudioPath: bank:/Main.strings
-  lastModified: 638249620187530267
+  lastModified: 638249821120000000
   FileSizes:
   - Name: Desktop
-    Value: 1796
+    Value: 1874
   Exists: 1
+--- !u!114 &-3036802099374350500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Start
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Start
+  Guid:
+    Data1: -1136595872
+    Data2: 1151422444
+    Data3: -924022099
+    Data4: 270301400
+  Banks:
+  - {fileID: -4568246401667841921}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3212
 --- !u!114 &-2841735728100614042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,11 +224,11 @@ MonoBehaviour:
   - {fileID: -4568246401667841921}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2310
+  Length: 3572
 --- !u!114 &-1594084580988015575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,7 +335,6 @@ MonoBehaviour:
   - {fileID: -2841735728100614042}
   - {fileID: 1768453549590871340}
   - {fileID: -6956039289524217526}
-  - {fileID: 6891216309916594376}
   - {fileID: -9078454692978393057}
   - {fileID: 3423069150948851973}
   - {fileID: 1386102627209152013}
@@ -319,12 +345,14 @@ MonoBehaviour:
   - {fileID: 2688780699779293318}
   - {fileID: -5244391329783775549}
   - {fileID: -1928872578102098758}
+  - {fileID: -3036802099374350500}
+  - {fileID: 8019001860601403642}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4568246401667841921}
   StringsBanks:
   - {fileID: -3960108607021370723}
-  cacheTime: 638249620187530267
+  cacheTime: 638249821120000000
   cacheVersion: 131605
 --- !u!114 &1022501326039110748
 MonoBehaviour:
@@ -352,7 +380,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2310
+  Length: 4362
 --- !u!114 &1185798088575888542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,7 +461,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3424
+  Length: 2400
 --- !u!114 &2688780699779293318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,7 +566,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 6015373988897336320}
   MinDistance: 1
   MaxDistance: 20
   Length: 128780
@@ -569,7 +598,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1279
---- !u!114 &6891216309916594376
+--- !u!114 &6015373988897336320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -578,24 +607,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Menu after start (wushi)
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/STUN
   m_EditorClassIdentifier: 
-  Path: event:/UI/Menu after start (wushi)
-  Guid:
-    Data1: -1136595872
-    Data2: 1151422444
-    Data3: -924022099
-    Data4: 270301400
-  Banks:
-  - {fileID: -4568246401667841921}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2310
+  Name: STUN
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1209392910
+    data2: 1996136239
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &7790743976107157065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,3 +649,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2310
+--- !u!114 &8019001860601403642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Stun
+  m_EditorClassIdentifier: 
+  Path: event:/Stun
+  Guid:
+    Data1: 846054809
+    Data2: 1086133256
+    Data3: -1498968691
+    Data4: 1368179337
+  Banks:
+  - {fileID: -4568246401667841921}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3513

@@ -1,5 +1,6 @@
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using FMODUnity;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -19,7 +20,8 @@ public class UIController : MonoBehaviour
     [SerializeField] private Text bonus;
     [SerializeField] private int pauseBonus, priceChip;
     [SerializeField] private GameObject music, sfxSound;
-    [SerializeField] private AudioClip musicSound, bangSound;
+    //[SerializeField] private AudioClip musicSound, bangSound;
+    [SerializeField] private StudioEventEmitter flameSEE;
     [SerializeField] private Button settingsButton, shopButton;
 
     public int score = 0;
@@ -89,6 +91,7 @@ public class UIController : MonoBehaviour
 
     public void StopFukingGame()
     {
+        flameSEE.Stop();
         settingsButton.enabled = true;
         shopButton.enabled = true;
 
@@ -217,6 +220,7 @@ public class UIController : MonoBehaviour
 
     public void StopGame()
     {
+        flameSEE.Stop();
         DOTween.KillAll();
         BGScroller.instance.StopGame();
         MoodController.instance.StopGame();

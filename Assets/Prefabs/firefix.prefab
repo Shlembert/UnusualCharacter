@@ -5156,7 +5156,7 @@ MonoBehaviour:
   type: 0
   bonus: 8
   plusMood: 0
-  soundEmitter: {fileID: 0}
+  soundEmitter: {fileID: 5418933834052163472}
   area: {fileID: 3240290312565127556}
 --- !u!50 &3318500198068425738
 Rigidbody2D:

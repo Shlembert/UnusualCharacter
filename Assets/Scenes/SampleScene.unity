@@ -10215,7 +10215,7 @@ MonoBehaviour:
   PlayerPrefsKey: Chair
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
-  sprite: {fileID: 812620813, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
+  sprite: {fileID: -140547716, guid: fba41f520e0e00b4d8e923f20b16d2f6, type: 3}
   price: 300
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
@@ -10432,7 +10432,7 @@ MonoBehaviour:
   PlayerPrefsKey: Chair
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
-  sprite: {fileID: -1028582281, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
+  sprite: {fileID: -1952825001, guid: fba41f520e0e00b4d8e923f20b16d2f6, type: 3}
   price: 1800
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
@@ -11637,7 +11637,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.00004208818, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &520563690
 MonoBehaviour:
@@ -11659,7 +11659,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1378280179, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
+  m_Sprite: {fileID: 1082549029, guid: fba41f520e0e00b4d8e923f20b16d2f6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17534,7 +17534,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -19}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &654586764
 MonoBehaviour:
@@ -17556,7 +17556,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1379501263, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
+  m_Sprite: {fileID: -891345347, guid: fba41f520e0e00b4d8e923f20b16d2f6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18433,7 +18433,7 @@ MonoBehaviour:
   PlayerPrefsKey: Chair
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
-  sprite: {fileID: 242543679, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
+  sprite: {fileID: 221525278, guid: fba41f520e0e00b4d8e923f20b16d2f6, type: 3}
   price: 1000
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
@@ -18566,7 +18566,7 @@ MonoBehaviour:
   PlayerPrefsKey: Chair
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
-  sprite: {fileID: 177371621, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
+  sprite: {fileID: 1909044901, guid: fba41f520e0e00b4d8e923f20b16d2f6, type: 3}
   price: 600
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
@@ -19525,7 +19525,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &766044597
 MonoBehaviour:
@@ -19547,7 +19547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1408920547, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
+  m_Sprite: {fileID: -562572329, guid: fba41f520e0e00b4d8e923f20b16d2f6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22115,6 +22115,7 @@ GameObject:
   - component: {fileID: 992283684}
   - component: {fileID: 992283683}
   - component: {fileID: 992283682}
+  - component: {fileID: 992283685}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -22171,6 +22172,8 @@ MonoBehaviour:
   particle: {fileID: 1578282702}
   starParticle: {fileID: 552147016}
   faceAnimator: {fileID: 1121575324}
+  stun: {fileID: 992283685}
+  music: {fileID: 1446357603}
 --- !u!50 &992283683
 Rigidbody2D:
   serializedVersion: 4
@@ -22208,6 +22211,37 @@ CapsuleCollider2D:
   m_Offset: {x: 0.029936042, y: 0.050094787}
   m_Size: {x: 0.2064854, y: 0.3620785}
   m_Direction: 0
+--- !u!114 &992283685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992283679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 846054809
+      Data2: 1086133256
+      Data3: -1498968691
+      Data4: 1368179337
+    Path: event:/Stun
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1002874417
 GameObject:
   m_ObjectHideFlags: 0
@@ -24111,6 +24145,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1746832815}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1086544555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25737,6 +25783,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1846555610}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: StopFukingGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1746832815}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28486,7 +28544,7 @@ MonoBehaviour:
       Data2: 1122776702
       Data3: -337166953
       Data4: -149751699
-    Path: "event:/\u041C\u0443\u0437\u044B\u043A\u0430"
+    Path: event:/Music
   Event: 
   PlayEvent: 11
   StopEvent: 12
@@ -28494,7 +28552,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
-  Params: []
+  Params:
+  - Name: STUN
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -34443,7 +34503,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598827707
 MonoBehaviour:
@@ -34465,7 +34525,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1974493534, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
+  m_Sprite: {fileID: -169316840, guid: fba41f520e0e00b4d8e923f20b16d2f6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -38870,8 +38930,7 @@ MonoBehaviour:
   priceChip: 15
   music: {fileID: 1446357600}
   sfxSound: {fileID: 185860815}
-  musicSound: {fileID: 8300000, guid: 96f5691c9cf863c45a6c01d190380173, type: 3}
-  bangSound: {fileID: 8300000, guid: f02f6939c2472eb4e84c5ef155224f3f, type: 3}
+  flameSEE: {fileID: 1846555615}
   settingsButton: {fileID: 743938176}
   shopButton: {fileID: 2070611056}
   score: 0
@@ -39165,7 +39224,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -8}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1851540513
 MonoBehaviour:
@@ -40176,7 +40235,7 @@ MonoBehaviour:
   PlayerPrefsKey: Chair
   buyButton: {fileID: 1404888686}
   buyButtonText: {fileID: 282260558}
-  sprite: {fileID: -867388296, guid: 792a3ec3fdf15d7499fd8fc986c7b773, type: 3}
+  sprite: {fileID: -2041086662, guid: fba41f520e0e00b4d8e923f20b16d2f6, type: 3}
   price: 0
   slot: {fileID: 872525866}
   priceText: {fileID: 1037587701}
