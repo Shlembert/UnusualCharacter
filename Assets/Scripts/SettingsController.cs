@@ -6,7 +6,7 @@ public class SettingsController : MonoBehaviour
 {
     public static SettingsController instance;
 
-    [SerializeField] private GameObject titleText, shopWindow, settingWindow, pauseWindow, startBtn, player, joy, enTxt, ruTxt;
+    [SerializeField] private GameObject titleText, shopWindow, settingWindow, pauseWindow, startBtn, player, joy, enTxt, ruTxt, creditWindow;
     [SerializeField] private List<SpawnerObstacle> spawnerObstacles;
     [SerializeField] private BGScroller bGScroller;
 
@@ -17,6 +17,7 @@ public class SettingsController : MonoBehaviour
     private float speedBG;
     private bool pressSetting = false;
     private bool pressShop = false;
+    private bool pressCredit = false;
     private bool pause = false;
     private bool en = false;
     private Vector2 playerVelosity;
@@ -121,6 +122,26 @@ public class SettingsController : MonoBehaviour
         }
     }
 
+    public void PressCredit()
+    {
+        pressCredit = true;
+
+        settingWindow.transform.DOMoveY(10, 0.5f, false).SetEase(Ease.InBack).OnComplete(() =>
+        {
+            creditWindow.transform.DOMoveY(0, 0.5f, false).SetEase(Ease.OutBack);
+        });
+    }
+
+    public void ExitCredit()
+    {
+        pressCredit = false;
+
+        creditWindow.transform.DOMoveY(-10, 0.5f, false).SetEase(Ease.InBack).OnComplete(() =>
+        {
+            settingWindow.transform.DOMoveY(0, 0.5f, false).SetEase(Ease.OutBack);
+        });
+    }
+
     public void PressShop()
     {
         if (!pressShop)
@@ -168,12 +189,16 @@ public class SettingsController : MonoBehaviour
 
         if (play)
         {
-            pressSetting = false;
-
-            settingWindow.transform.DOMoveY(-10, 0.5f, false).SetEase(Ease.InBack).OnComplete(() =>
+            if (pressCredit) ExitCredit();
+            else
             {
-                pauseWindow.transform.DOMoveY(0, 0.5f, false).SetEase(Ease.OutBack);
-            });
+                pressSetting = false;
+
+                settingWindow.transform.DOMoveY(-10, 0.5f, false).SetEase(Ease.InBack).OnComplete(() =>
+                {
+                    pauseWindow.transform.DOMoveY(0, 0.5f, false).SetEase(Ease.OutBack);
+                });
+            }
         }
         else
         {
